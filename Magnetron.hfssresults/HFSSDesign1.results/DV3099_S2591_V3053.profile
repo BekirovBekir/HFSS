@@ -184,4 +184,16 @@ $begin 'Profile'
 		ProfileTask('', 0, 0, 0, 0, 0, '', false, true)
 		ProfileTask('Solution Process', 0, 0, 0, 0, 0, 'Elapsed time : 00:04:22 , Hfss ComEngine Memory : 85.3 M', false, true)
 	$end 'ProfileGroup'
+	$begin 'ProfileGroup'
+		StartInfo='Time:  03/06/2018 11:02:40, Host DESKTOP-VI017UR, HFSS Version 14.0.1'
+		TotalInfo='Time:  03/06/2018 11:02:40, Status: Normal Completion'
+		ProfileTask('', 0, 0, 0, 0, 0, 'Executing from C:\\Program Files\\Ansoft\\HFSS14.0\\Win32\\HFSSCOMENGINE.exe', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, 'Desired RAM limit not set.', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, 'Solution Basis Order: 1', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, '', false, true)
+		ProfileTask('Solution Sweep1', 0, 0, 0, 0, 0, 'Discrete Sweep', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, 'From 32 GHz to 40 GHz, 16 Steps', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, '', false, true)
+		ProfileTask('Solution Process', 0, 0, 0, 0, 0, 'Elapsed time : 00:00:00 , Hfss ComEngine Memory : 83.3 M', false, true)
+	$end 'ProfileGroup'
 $end 'Profile'
