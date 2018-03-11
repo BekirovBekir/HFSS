@@ -1,19 +1,11 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-<<<<<<< HEAD
-    time(year=000000002018, month=000000000003, day=000000000006, hour=000000000020, min=000000000028, sec=000000000042)
+    time(year=000000002018, month=000000000003, day=000000000010, hour=000000000015, min=000000000010, sec=000000000025)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000073907, lin=000000001634, lvl=000000000000)
-=======
-    time(year=000000002018, month=000000000003, day=000000000009, hour=000000000012, min=000000000040, sec=000000000057)
-    version=000000000000
-  $end 'properties'
-  $begin '$base_index$'
-    $index$(pos=000000047808, lin=000000001110, lvl=000000000000)
->>>>>>> 380a2c913743486fa080d9e811918a48140ddc6e
+    $index$(pos=000000048917, lin=000000001120, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
 $begin 'SolutionBlock249'
@@ -1127,42 +1119,45 @@ $begin 'OptimetricsResults'
 $end 'OptimetricsResults'
 $begin '$index$'
 	$begin '$index$'
-		OptimetricsResults(pos=47726, lin=1107, lvl=0)
-		SolutionBlock249(pos=370, lin=1, lvl=0)
-		BlockMapName(pos=15523, lin=312, lvl=0)
-		SolutionBlock250(pos=19073, lin=342, lvl=0)
-		SolutionBlock251(pos=21608, lin=419, lvl=0)
-		SolutionBlock252(pos=25448, lin=512, lvl=0)
-		SolutionBlock1(pos=29518, lin=630, lvl=0)
-		OptimetricsResult1(pos=34995, lin=745, lvl=0)
-		SolutionBlock275(pos=37596, lin=798, lvl=0)
-		SolutionBlock274(pos=38011, lin=811, lvl=0)
-		SolutionBlock273(pos=38425, lin=824, lvl=0)
-		SolutionBlock272(pos=38839, lin=837, lvl=0)
-		SolutionBlock271(pos=39314, lin=851, lvl=0)
-		SolutionBlock270(pos=39788, lin=865, lvl=0)
-		SolutionBlock269(pos=40203, lin=878, lvl=0)
-		SolutionBlock268(pos=40618, lin=891, lvl=0)
-		SolutionBlock267(pos=41033, lin=904, lvl=0)
-		SolutionBlock266(pos=41507, lin=918, lvl=0)
-		SolutionBlock265(pos=41981, lin=932, lvl=0)
-		SolutionBlock264(pos=42455, lin=946, lvl=0)
-		SolutionBlock263(pos=42871, lin=959, lvl=0)
-		SolutionBlock262(pos=43286, lin=972, lvl=0)
-		SolutionBlock261(pos=43701, lin=985, lvl=0)
-		SolutionBlock260(pos=44115, lin=998, lvl=0)
-		SolutionBlock259(pos=44588, lin=1012, lvl=0)
-		SolutionBlock258(pos=45118, lin=1027, lvl=0)
-		SolutionBlock257(pos=45475, lin=1039, lvl=0)
-		SolutionBlock256(pos=45892, lin=1052, lvl=0)
-		SolutionBlock255(pos=46306, lin=1065, lvl=0)
-		SolutionBlock254(pos=46722, lin=1078, lvl=0)
-		SolutionBlock253(pos=47194, lin=1092, lvl=0)
+		SolutionBlock249(pos=370, lin=11, lvl=0)
+		BlockMapName(pos=15834, lin=322, lvl=0)
+		SolutionBlock250(pos=19414, lin=352, lvl=0)
+		SolutionBlock251(pos=22026, lin=429, lvl=0)
+		SolutionBlock252(pos=25959, lin=522, lvl=0)
+		SolutionBlock1(pos=30147, lin=640, lvl=0)
+		OptimetricsResult1(pos=35739, lin=755, lvl=0)
+		SolutionBlock275(pos=38393, lin=808, lvl=0)
+		SolutionBlock274(pos=38821, lin=821, lvl=0)
+		SolutionBlock273(pos=39248, lin=834, lvl=0)
+		SolutionBlock272(pos=39675, lin=847, lvl=0)
+		SolutionBlock271(pos=40164, lin=861, lvl=0)
+		SolutionBlock270(pos=40652, lin=875, lvl=0)
+		SolutionBlock269(pos=41080, lin=888, lvl=0)
+		SolutionBlock268(pos=41508, lin=901, lvl=0)
+		SolutionBlock267(pos=41936, lin=914, lvl=0)
+		SolutionBlock266(pos=42424, lin=928, lvl=0)
+		SolutionBlock265(pos=42912, lin=942, lvl=0)
+		SolutionBlock264(pos=43400, lin=956, lvl=0)
+		SolutionBlock263(pos=43829, lin=969, lvl=0)
+		SolutionBlock262(pos=44257, lin=982, lvl=0)
+		SolutionBlock261(pos=44685, lin=995, lvl=0)
+		SolutionBlock260(pos=45112, lin=1008, lvl=0)
+		SolutionBlock259(pos=45599, lin=1022, lvl=0)
+		SolutionBlock258(pos=46144, lin=1037, lvl=0)
+		SolutionBlock257(pos=46513, lin=1049, lvl=0)
+		SolutionBlock256(pos=46943, lin=1062, lvl=0)
+		SolutionBlock255(pos=47370, lin=1075, lvl=0)
+		SolutionBlock254(pos=47799, lin=1088, lvl=0)
+		SolutionBlock253(pos=48285, lin=1102, lvl=0)
+		OptimetricsResults(pos=48832, lin=1117, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=47808, lin=1110, lvl=0)
+		$index$(pos=48917, lin=1120, lvl=0)
+	$end '$index$'
+$end '$index$'
+
 	$end '$index$'
 $end '$index$'
  lin=1624, lvl=0)
 	$end '$index$'
 $end '$index$'
-          
+                                                                                                                                                                                                                                                                                                                                                                  
