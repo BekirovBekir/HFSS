@@ -66,4 +66,27 @@ $begin 'Profile'
 		ProfileTask('', 0, 0, 0, 0, 0, '', false, true)
 		ProfileTask('Adaptive Process', 0, 0, 0, 0, 0, 'Elapsed time : 00:02:07 , Hfss ComEngine Memory : 81.6 M', false, true)
 	$end 'ProfileGroup'
+	$begin 'ProfileGroup'
+		StartInfo='Time:  03/18/2018 13:42:06, Host BEKIR-PC, HFSS Version 14.0.1'
+		TotalInfo='Time:  03/18/2018 13:44:31, Status: Normal Completion'
+		ProfileTask('', 0, 0, 0, 0, 0, 'Executing from C:\\Program Files\\Ansoft\\HFSS14.0\\Win32\\HFSSCOMENGINE.exe', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, 'Desired RAM limit not set.', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, 'Solution Basis Order: 1', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, '', false, true)
+		ProfileTask('Adaptive Pass 4', 0, 0, 0, 0, 0, ' Frequency: 40  GHz', false, true)
+		ProfileTask('Simulation Setup', 4, 0, 4, 0, 81348, 'Disk = 0 KBytes', true, true)
+		ProfileTask('Matrix Assembly', 11, 0, 11, 0, 173008, 'Disk = 76 KBytes, 52670 tetrahedra , Port2: 140 triangles , Port1: 103 triangles ', true, true)
+		ProfileTask('Solver MRS2', 24, 0, 38, 0, 500896, 'Disk = 0 KBytes, matrix size 292146 , matrix bandwidth  19.0 ', true, true)
+		ProfileTask('Field Recovery', 6, 0, 9, 0, 500896, 'Disk = 27078 KBytes, 2 excitations ', true, true)
+		ProfileTask('', 0, 0, 0, 0, 0, '', false, true)
+		ProfileTask('Adaptive Pass 5', 0, 0, 0, 0, 0, ' Frequency: 40  GHz', false, true)
+		ProfileTask('  Mesh (volume, adaptive)', 19, 0, 19, 0, 100316, '58616 tetrahedra', true, true)
+		ProfileTask('Simulation Setup', 5, 0, 5, 0, 85072, 'Disk = 0 KBytes', true, true)
+		ProfileTask('Matrix Assembly', 13, 0, 12, 0, 188612, 'Disk = 0 KBytes, 58616 tetrahedra , Port2: 166 triangles , Port1: 103 triangles ', true, true)
+		ProfileTask('Solver MRS2', 32, 0, 50, 0, 621904, 'Disk = 0 KBytes, matrix size 327862 , matrix bandwidth  19.2 ', true, true)
+		ProfileTask('Field Recovery', 6, 0, 9, 0, 621904, 'Disk = 4561 KBytes, 2 excitations ', true, true)
+		ProfileTask('', 0, 0, 0, 0, 0, 'Adaptive Passes converged', false, true)
+		ProfileTask('', 0, 0, 0, 0, 0, '', false, true)
+		ProfileTask('Adaptive Process', 0, 0, 0, 0, 0, 'Elapsed time : 00:02:24 , Hfss ComEngine Memory : 81.6 M', false, true)
+	$end 'ProfileGroup'
 $end 'Profile'
