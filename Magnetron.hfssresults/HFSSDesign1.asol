@@ -1,11 +1,11 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002018, month=000000000003, day=000000000019, hour=000000000020, min=000000000057, sec=000000000022)
+    time(year=000000002018, month=000000000003, day=000000000020, hour=000000000010, min=000000000040, sec=000000000009)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000045792, lin=000000001111, lvl=000000000000)
+    $index$(pos=000000042879, lin=000000001034, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
 $begin 'SolutionBlock1'
@@ -14,7 +14,7 @@ $begin 'SolutionBlock1'
 	VersionID=3555
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=3850
+	NextUniqueID=3922
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='', ID=91)
@@ -205,8 +205,68 @@ $begin 'BlockMapName'
 	'SolutionKey(SimSetup=3349, Instance=\'$len=\\\'3mm\\\' $widht=\\\'0mm\\\'\', Solution=-3, VersionID=3555)'='SolutionBlock369'
 	'SolutionKey(SimSetup=3349, Instance=\'SetupDefinition\', Solution=-1, VersionID=3555)'='SolutionBlock338'
 	'SolutionKey(SimSetup=3349, Instance=\'SolutionDefinition\', Solution=3350, VersionID=3555)'='SolutionBlock336'
-	'SolutionKey(SimSetup=3349, Instance=\'SolutionDefinition\', Solution=3351, VersionID=3736)'='SolutionBlock373'
+	'SolutionKey(SimSetup=3349, Instance=\'SolutionDefinition\', Solution=3351, VersionID=3880)'='SolutionBlock374'
 $end 'BlockMapName'
+$begin 'SolutionBlock338'
+	SimSetupID=3349
+	SimSetupName='Setup2'
+	VersionID=3555
+	IsImported=false
+	IsTable=false
+	SolveSetupID=4
+	$begin 'CurrMeshes'
+		M(VID=3099, Ver=3555, Dir='DV3099_S3349_V3555.cmesh/')
+	$end 'CurrMeshes'
+	$begin 'WaveAdapt'
+		WA(VID=3099, Ver=3555, A=1)
+	$end 'WaveAdapt'
+	$begin 'MeshOps'
+		OPS(VID=3099, Ver=3555, ID=1)
+	$end 'MeshOps'
+	$begin 'LastPassNumbers'
+		LP(VID=3099, Ver=3555, P=5)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=3099, Ver=3555, File='DV3099_S3349_V3555.profile')
+		P(VID=3192, Ver=3555, File='DV3192_S3349_V3555.profile')
+		P(VID=3204, Ver=3555, File='DV3204_S3349_V3555.profile')
+		P(VID=3431, Ver=3555, File='DV3431_S3349_V3555.profile')
+		P(VID=3435, Ver=3555, File='DV3435_S3349_V3555.profile')
+		P(VID=3437, Ver=3555, File='DV3437_S3349_V3555.profile')
+		P(VID=3439, Ver=3555, File='DV3439_S3349_V3555.profile')
+		P(VID=3440, Ver=3555, File='DV3440_S3349_V3555.profile')
+		P(VID=3443, Ver=3555, File='DV3443_S3349_V3555.profile')
+		P(VID=3444, Ver=3555, File='DV3444_S3349_V3555.profile')
+		P(VID=3447, Ver=3555, File='DV3447_S3349_V3555.profile')
+		P(VID=3448, Ver=3555, File='DV3448_S3349_V3555.profile')
+		P(VID=3451, Ver=3555, File='DV3451_S3349_V3555.profile')
+		P(VID=3452, Ver=3555, File='DV3452_S3349_V3555.profile')
+		P(VID=3455, Ver=3555, File='DV3455_S3349_V3555.profile')
+		P(VID=3456, Ver=3555, File='DV3456_S3349_V3555.profile')
+		P(VID=3535, Ver=3555, File='DV3535_S3349_V3555.profile')
+		P(VID=3536, Ver=3555, File='DV3536_S3349_V3555.profile')
+		P(VID=3537, Ver=3555, File='DV3537_S3349_V3555.profile')
+		P(VID=3538, Ver=3555, File='DV3538_S3349_V3555.profile')
+		P(VID=3539, Ver=3555, File='DV3539_S3349_V3555.profile')
+		P(VID=3540, Ver=3555, File='DV3540_S3349_V3555.profile')
+		P(VID=3541, Ver=3555, File='DV3541_S3349_V3555.profile')
+		P(VID=3542, Ver=3555, File='DV3542_S3349_V3555.profile')
+		P(VID=3543, Ver=3555, File='DV3543_S3349_V3555.profile')
+		P(VID=3544, Ver=3555, File='DV3544_S3349_V3555.profile')
+		P(VID=3545, Ver=3555, File='DV3545_S3349_V3555.profile')
+		P(VID=3546, Ver=3555, File='DV3546_S3349_V3555.profile')
+		P(VID=3547, Ver=3555, File='DV3547_S3349_V3555.profile')
+		P(VID=3550, Ver=3555, File='DV3550_S3349_V3555.profile')
+		P(VID=3551, Ver=3555, File='DV3551_S3349_V3555.profile')
+		P(VID=3552, Ver=3555, File='DV3552_S3349_V3555.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=3099, Ver=3555, Dir='DV3099_S3349_MI0_V3555.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock338'
 $begin 'SolutionBlock332'
 	SolutionName='AdaptivePass'
 	SolutionID=2592
@@ -311,7 +371,7 @@ $begin 'SolutionBlock336'
 	$end 'States'
 	$begin 'Definition'
 		SamplingInterpolation=false
-		Frequencies(18000000000, 32000000000, 37340000000, 40000000000)
+		Frequencies(18000000000, 25000000000, 32000000000, 37340000000, 40000000000)
 		SolutionType=6
 		CenterFreq=0
 	$end 'Definition'
@@ -488,47 +548,15 @@ $begin 'SolutionBlock336'
 		$end 'SubData'
 	$end 'A'
 $end 'SolutionBlock336'
-$begin 'SolutionBlock373'
+$begin 'SolutionBlock374'
 	SolutionName='LastAdaptive'
 	SolutionID=3351
-	V=3736
+	V=3880
 	$begin 'States'
-		F(VID=3099, Ver=3736)
-		F(VID=3192, Ver=3736)
-		F(VID=3204, Ver=3736)
-		F(VID=3431, Ver=3736)
-		F(VID=3435, Ver=3736)
-		F(VID=3437, Ver=3736)
-		F(VID=3439, Ver=3736)
-		F(VID=3440, Ver=3736)
-		F(VID=3443, Ver=3736)
-		F(VID=3444, Ver=3736)
-		F(VID=3447, Ver=3736)
-		F(VID=3448, Ver=3736)
-		F(VID=3451, Ver=3736)
-		F(VID=3452, Ver=3736)
-		F(VID=3455, Ver=3736)
-		F(VID=3456, Ver=3736)
-		F(VID=3535, Ver=3736)
-		F(VID=3536, Ver=3736)
-		F(VID=3537, Ver=3736)
-		F(VID=3538, Ver=3736)
-		F(VID=3539, Ver=3736)
-		F(VID=3540, Ver=3736)
-		F(VID=3541, Ver=3736)
-		F(VID=3542, Ver=3736)
-		F(VID=3543, Ver=3736)
-		F(VID=3544, Ver=3736)
-		F(VID=3545, Ver=3736)
-		F(VID=3546, Ver=3736)
-		F(VID=3547, Ver=3736)
-		F(VID=3550, Ver=3736)
-		F(VID=3551, Ver=3736)
-		F(VID=3552, Ver=3736)
 	$end 'States'
 	$begin 'Definition'
 		SamplingInterpolation=false
-		Frequencies(40000000000)
+		Frequencies(25000000000)
 		SolutionType=6
 		CenterFreq=0
 	$end 'Definition'
@@ -537,514 +565,10 @@ $begin 'SolutionBlock373'
 	IsMatrixDataTable=false
 	SweepID=-1
 	KeepAllFastSweepFields=false
-	$begin 'M'
-		$begin 'SubData'
-			ID=0
-			M(VID=3099, Ver=3736, File='DV3099_SOL3351_M0_V3736.sd')
-			M(VID=3192, Ver=3736, File='DV3192_SOL3351_M0_V3736.sd')
-			M(VID=3204, Ver=3736, File='DV3204_SOL3351_M0_V3736.sd')
-			M(VID=3431, Ver=3736, File='DV3431_SOL3351_M0_V3736.sd')
-			M(VID=3435, Ver=3736, File='DV3435_SOL3351_M0_V3736.sd')
-			M(VID=3437, Ver=3736, File='DV3437_SOL3351_M0_V3736.sd')
-			M(VID=3439, Ver=3736, File='DV3439_SOL3351_M0_V3736.sd')
-			M(VID=3440, Ver=3736, File='DV3440_SOL3351_M0_V3736.sd')
-			M(VID=3443, Ver=3736, File='DV3443_SOL3351_M0_V3736.sd')
-			M(VID=3444, Ver=3736, File='DV3444_SOL3351_M0_V3736.sd')
-			M(VID=3447, Ver=3736, File='DV3447_SOL3351_M0_V3736.sd')
-			M(VID=3448, Ver=3736, File='DV3448_SOL3351_M0_V3736.sd')
-			M(VID=3451, Ver=3736, File='DV3451_SOL3351_M0_V3736.sd')
-			M(VID=3452, Ver=3736, File='DV3452_SOL3351_M0_V3736.sd')
-			M(VID=3455, Ver=3736, File='DV3455_SOL3351_M0_V3736.sd')
-			M(VID=3456, Ver=3736, File='DV3456_SOL3351_M0_V3736.sd')
-			M(VID=3535, Ver=3736, File='DV3535_SOL3351_M0_V3736.sd')
-			M(VID=3536, Ver=3736, File='DV3536_SOL3351_M0_V3736.sd')
-			M(VID=3537, Ver=3736, File='DV3537_SOL3351_M0_V3736.sd')
-			M(VID=3538, Ver=3736, File='DV3538_SOL3351_M0_V3736.sd')
-			M(VID=3539, Ver=3736, File='DV3539_SOL3351_M0_V3736.sd')
-			M(VID=3540, Ver=3736, File='DV3540_SOL3351_M0_V3736.sd')
-			M(VID=3541, Ver=3736, File='DV3541_SOL3351_M0_V3736.sd')
-			M(VID=3542, Ver=3736, File='DV3542_SOL3351_M0_V3736.sd')
-			M(VID=3543, Ver=3736, File='DV3543_SOL3351_M0_V3736.sd')
-			M(VID=3544, Ver=3736, File='DV3544_SOL3351_M0_V3736.sd')
-			M(VID=3545, Ver=3736, File='DV3545_SOL3351_M0_V3736.sd')
-			M(VID=3546, Ver=3736, File='DV3546_SOL3351_M0_V3736.sd')
-			M(VID=3547, Ver=3736, File='DV3547_SOL3351_M0_V3736.sd')
-			M(VID=3550, Ver=3736, File='DV3550_SOL3351_M0_V3736.sd')
-			M(VID=3551, Ver=3736, File='DV3551_SOL3351_M0_V3736.sd')
-			M(VID=3552, Ver=3736, File='DV3552_SOL3351_M0_V3736.sd')
-		$end 'SubData'
-	$end 'M'
-	$begin 'Fields'
-		IDDblMap(3777, 40000000000)
-		$begin 'DataMap'
-			VID=3099
-			Ver=3736
-			F(DblID=3777, Dir='DV3099_S3351_V3736_F3777/')
-		$end 'DataMap'
-	$end 'Fields'
-$end 'SolutionBlock373'
-$begin 'SolutionBlock338'
-	SimSetupID=3349
-	SimSetupName='Setup2'
-	VersionID=3555
-	IsImported=false
-	IsTable=false
-	SolveSetupID=4
-	$begin 'CurrMeshes'
-		M(VID=3099, Ver=3555, Dir='DV3099_S3349_V3555.cmesh/')
-	$end 'CurrMeshes'
-	$begin 'WaveAdapt'
-		WA(VID=3099, Ver=3555, A=1)
-	$end 'WaveAdapt'
-	$begin 'MeshOps'
-		OPS(VID=3099, Ver=3555, ID=1)
-	$end 'MeshOps'
-	$begin 'LastPassNumbers'
-		LP(VID=3099, Ver=3555, P=5)
-	$end 'LastPassNumbers'
-	$begin 'Profiles'
-		P(VID=3099, Ver=3555, File='DV3099_S3349_V3555.profile')
-		P(VID=3192, Ver=3555, File='DV3192_S3349_V3555.profile')
-		P(VID=3204, Ver=3555, File='DV3204_S3349_V3555.profile')
-		P(VID=3431, Ver=3555, File='DV3431_S3349_V3555.profile')
-		P(VID=3435, Ver=3555, File='DV3435_S3349_V3555.profile')
-		P(VID=3437, Ver=3555, File='DV3437_S3349_V3555.profile')
-		P(VID=3439, Ver=3555, File='DV3439_S3349_V3555.profile')
-		P(VID=3440, Ver=3555, File='DV3440_S3349_V3555.profile')
-		P(VID=3443, Ver=3555, File='DV3443_S3349_V3555.profile')
-		P(VID=3444, Ver=3555, File='DV3444_S3349_V3555.profile')
-		P(VID=3447, Ver=3555, File='DV3447_S3349_V3555.profile')
-		P(VID=3448, Ver=3555, File='DV3448_S3349_V3555.profile')
-		P(VID=3451, Ver=3555, File='DV3451_S3349_V3555.profile')
-		P(VID=3452, Ver=3555, File='DV3452_S3349_V3555.profile')
-		P(VID=3455, Ver=3555, File='DV3455_S3349_V3555.profile')
-		P(VID=3456, Ver=3555, File='DV3456_S3349_V3555.profile')
-		P(VID=3535, Ver=3555, File='DV3535_S3349_V3555.profile')
-		P(VID=3536, Ver=3555, File='DV3536_S3349_V3555.profile')
-		P(VID=3537, Ver=3555, File='DV3537_S3349_V3555.profile')
-		P(VID=3538, Ver=3555, File='DV3538_S3349_V3555.profile')
-		P(VID=3539, Ver=3555, File='DV3539_S3349_V3555.profile')
-		P(VID=3540, Ver=3555, File='DV3540_S3349_V3555.profile')
-		P(VID=3541, Ver=3555, File='DV3541_S3349_V3555.profile')
-		P(VID=3542, Ver=3555, File='DV3542_S3349_V3555.profile')
-		P(VID=3543, Ver=3555, File='DV3543_S3349_V3555.profile')
-		P(VID=3544, Ver=3555, File='DV3544_S3349_V3555.profile')
-		P(VID=3545, Ver=3555, File='DV3545_S3349_V3555.profile')
-		P(VID=3546, Ver=3555, File='DV3546_S3349_V3555.profile')
-		P(VID=3547, Ver=3555, File='DV3547_S3349_V3555.profile')
-		P(VID=3550, Ver=3555, File='DV3550_S3349_V3555.profile')
-		P(VID=3551, Ver=3555, File='DV3551_S3349_V3555.profile')
-		P(VID=3552, Ver=3555, File='DV3552_S3349_V3555.profile')
-	$end 'Profiles'
-	$begin 'MI'
-		$begin 'SubData'
-			ID=0
-			MI(VID=3099, Ver=3555, Dir='DV3099_S3349_MI0_V3555.sd/')
-		$end 'SubData'
-	$end 'MI'
-$end 'SolutionBlock338'
-$begin 'SolutionBlock339'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=35535)
-	c(passno=2, numtets=41032, magdeltas=0.02389268841143399)
-	c(passno=3, numtets=46770, magdeltas=1.955926529485612)
-	c(passno=4, numtets=52670, magdeltas=1.719094182011402)
-	c(passno=5, numtets=58616, magdeltas=0.001408659448915359)
-$end 'SolutionBlock339'
-$begin 'SolutionBlock340'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=35271)
-	c(passno=2, numtets=40696, magdeltas=0.03692319076795701)
-	c(passno=3, numtets=46315, magdeltas=0.007303971040626024)
-$end 'SolutionBlock340'
-$begin 'SolutionBlock341'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=35972)
-	c(passno=2, numtets=41539, magdeltas=0.02242659480506437)
-	c(passno=3, numtets=47359, magdeltas=0.006048027626300539)
-$end 'SolutionBlock341'
-$begin 'SolutionBlock342'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=36270)
-	c(passno=2, numtets=41877, magdeltas=0.01778482226240972)
-$end 'SolutionBlock342'
-$begin 'SolutionBlock343'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=35732)
-	c(passno=2, numtets=41295, magdeltas=0.02403606878733779)
-	c(passno=3, numtets=47085, magdeltas=0.01017899814983526)
-$end 'SolutionBlock343'
-$begin 'SolutionBlock344'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=35987)
-	c(passno=2, numtets=41530, magdeltas=0.07038705996685507)
-	c(passno=3, numtets=47308, magdeltas=0.03688736278387632)
-	c(passno=4, numtets=53131, magdeltas=0.005055554464686224)
-$end 'SolutionBlock344'
-$begin 'SolutionBlock345'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37366)
-	c(passno=2, numtets=43152, magdeltas=0.006754983217372813)
-$end 'SolutionBlock345'
-$begin 'SolutionBlock346'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=36887)
-	c(passno=2, numtets=42506, magdeltas=0.03554685205425279)
-	c(passno=3, numtets=48366, magdeltas=0.01137416626185569)
-$end 'SolutionBlock346'
-$begin 'SolutionBlock347'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37306)
-	c(passno=2, numtets=43101, magdeltas=0.01361800558635106)
-$end 'SolutionBlock347'
-$begin 'SolutionBlock348'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37021)
-	c(passno=2, numtets=42768, magdeltas=0.008502823624674407)
-$end 'SolutionBlock348'
-$begin 'SolutionBlock349'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37379)
-	c(passno=2, numtets=43159, magdeltas=0.01774202009269147)
-$end 'SolutionBlock349'
-$begin 'SolutionBlock350'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=38117)
-	c(passno=2, numtets=43983, magdeltas=0.01765912446441083)
-$end 'SolutionBlock350'
-$begin 'SolutionBlock351'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37207)
-	c(passno=2, numtets=43042, magdeltas=0.01158107297736148)
-$end 'SolutionBlock351'
-$begin 'SolutionBlock352'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37772)
-	c(passno=2, numtets=43658, magdeltas=0.0266851099653823)
-	c(passno=3, numtets=49783, magdeltas=0.01043855127829116)
-$end 'SolutionBlock352'
-$begin 'SolutionBlock353'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37193)
-	c(passno=2, numtets=43012, magdeltas=0.03904132356081412)
-	c(passno=3, numtets=49078, magdeltas=0.007375471989059619)
-$end 'SolutionBlock353'
-$begin 'SolutionBlock354'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37128)
-	c(passno=2, numtets=42953, magdeltas=0.05657528017855754)
-	c(passno=3, numtets=49032, magdeltas=0.0167483218709344)
-$end 'SolutionBlock354'
-$begin 'SolutionBlock355'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=38247)
-	c(passno=2, numtets=44228, magdeltas=0.02113980526576769)
-	c(passno=3, numtets=50472, magdeltas=0.006484155694727298)
-$end 'SolutionBlock355'
-$begin 'SolutionBlock356'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=37480)
-	c(passno=2, numtets=43328, magdeltas=0.03104197802224644)
-	c(passno=3, numtets=49384, magdeltas=0.01932511409009088)
-$end 'SolutionBlock356'
-$begin 'SolutionBlock357'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=39129)
-	c(passno=2, numtets=45287, magdeltas=0.04877767237157334)
-	c(passno=3, numtets=51731, magdeltas=0.01360206071838765)
-$end 'SolutionBlock357'
-$begin 'SolutionBlock358'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=38375)
-	c(passno=2, numtets=44316, magdeltas=0.03653144550133853)
-	c(passno=3, numtets=50545, magdeltas=0.02056138651458552)
-	c(passno=4, numtets=56994, magdeltas=0.005547515230884477)
-$end 'SolutionBlock358'
-$begin 'SolutionBlock359'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=39289)
-	c(passno=2, numtets=45480, magdeltas=0.03398040014342487)
-	c(passno=3, numtets=52003, magdeltas=0.01317476039490411)
-$end 'SolutionBlock359'
-$begin 'SolutionBlock360'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=39515)
-	c(passno=2, numtets=45568, magdeltas=0.1120073473454151)
-	c(passno=3, numtets=51927, magdeltas=0.02844814052372633)
-	c(passno=4, numtets=58423, magdeltas=0.008051355506356658)
-$end 'SolutionBlock360'
-$begin 'SolutionBlock361'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=39694)
-	c(passno=2, numtets=45959, magdeltas=0.0564647846400253)
-	c(passno=3, numtets=52566, magdeltas=0.05044543044790172)
-	c(passno=4, numtets=59340, magdeltas=0.01154610252359128)
-$end 'SolutionBlock361'
-$begin 'SolutionBlock362'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=39641)
-	c(passno=2, numtets=45865, magdeltas=0.1556002389520742)
-	c(passno=3, numtets=52372, magdeltas=0.01383906285144382)
-$end 'SolutionBlock362'
-$begin 'SolutionBlock363'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=false
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='0'
-	c(passno=1, numtets=39495)
-	c(passno=2, numtets=45675, magdeltas=0.2092621381950849)
-	c(passno=3, numtets=52046, magdeltas=0.1101704752521854)
-	c(passno=4, numtets=58511, magdeltas=0.06678998991552572)
-	c(passno=5, numtets=65143, magdeltas=0.05103359215705095)
-	c(passno=6, numtets=71915, magdeltas=0.02193943909368037)
-$end 'SolutionBlock363'
-$begin 'SolutionBlock364'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=39826)
-	c(passno=2, numtets=46116, magdeltas=0.2125858668325323)
-	c(passno=3, numtets=52688, magdeltas=0.04181232725297224)
-	c(passno=4, numtets=59351, magdeltas=0.01653989899892439)
-$end 'SolutionBlock364'
-$begin 'SolutionBlock365'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=40572)
-	c(passno=2, numtets=46942, magdeltas=1.418178784276577)
-	c(passno=3, numtets=53560, magdeltas=0.1284638382294649)
-	c(passno=4, numtets=60316, magdeltas=0.03769972401112171)
-	c(passno=5, numtets=67255, magdeltas=0.02248587368090444)
-	c(passno=6, numtets=74415, magdeltas=0.01354804948200103)
-$end 'SolutionBlock365'
-$begin 'SolutionBlock366'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=39485)
-	c(passno=2, numtets=45714, magdeltas=0.2985655566500137)
-	c(passno=3, numtets=52190, magdeltas=0.05928018666616346)
-	c(passno=4, numtets=58756, magdeltas=0.02805883300727806)
-	c(passno=5, numtets=65670, magdeltas=0.01074547387631363)
-$end 'SolutionBlock366'
-$begin 'SolutionBlock367'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=41684)
-	c(passno=2, numtets=48253, magdeltas=0.6666432532676951)
-	c(passno=3, numtets=55082, magdeltas=0.1861342110362602)
-	c(passno=4, numtets=62189, magdeltas=0.08776351968026643)
-	c(passno=5, numtets=69618, magdeltas=0.04455289838187541)
-	c(passno=6, numtets=77316, magdeltas=0.01664219675593935)
-$end 'SolutionBlock367'
-$begin 'SolutionBlock368'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=41151)
-	c(passno=2, numtets=47618, magdeltas=0.3615239026690552)
-	c(passno=3, numtets=54398, magdeltas=0.09119268641432142)
-	c(passno=4, numtets=61359, magdeltas=0.03800826256536467)
-	c(passno=5, numtets=68657, magdeltas=0.01535894424522538)
-$end 'SolutionBlock368'
-$begin 'SolutionBlock369'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=false
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='0'
-	c(passno=1, numtets=41218)
-	c(passno=2, numtets=47738, magdeltas=0.3373915327927873)
-	c(passno=3, numtets=54507, magdeltas=0.1649573273266237)
-	c(passno=4, numtets=61423, magdeltas=0.07152759367554024)
-	c(passno=5, numtets=68612, magdeltas=0.0307930888072227)
-	c(passno=6, numtets=76172, magdeltas=0.02422430513685896)
-$end 'SolutionBlock369'
-$begin 'SolutionBlock370'
-	ConvSetupName='DrivenDeltaSConvNOV'
-	IsConverged=true
-	MaxPasses='6'
-	MinPasses='1'
-	ConvTarget='0.02'
-	ConvTargetConsecPasses='1'
-	ConvCurrentConsecPasses='1'
-	c(passno=1, numtets=40408)
-	c(passno=2, numtets=46818, magdeltas=0.2927055094302304)
-	c(passno=3, numtets=53512, magdeltas=0.1020245887304097)
-	c(passno=4, numtets=60352, magdeltas=0.04887282885714555)
-	c(passno=5, numtets=67464, magdeltas=0.01769510190273707)
-$end 'SolutionBlock370'
+$end 'SolutionBlock374'
+$begin 'OptimetricsResults'
+	'1:9'='OptimetricsResult1'
+$end 'OptimetricsResults'
 $begin 'OptimetricsResult1'
 	vi('$len', '0mm', '0mm', '0mm')
 	vi('$widht', '0mm', '0mm', '0mm')
@@ -1115,55 +639,454 @@ $begin 'OptimetricsResult1'
 	var(3.000000000000000e-003, 3.000000000000000e-005)
 	gvs(3.000000000000000e-003, 3.000000000000000e-005)
 $end 'OptimetricsResult1'
-$begin 'OptimetricsResults'
-	'1:9'='OptimetricsResult1'
-$end 'OptimetricsResults'
+$begin 'SolutionBlock370'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=40408)
+	c(passno=2, numtets=46818, magdeltas=0.2927055094302304)
+	c(passno=3, numtets=53512, magdeltas=0.1020245887304097)
+	c(passno=4, numtets=60352, magdeltas=0.04887282885714555)
+	c(passno=5, numtets=67464, magdeltas=0.01769510190273707)
+$end 'SolutionBlock370'
+$begin 'SolutionBlock369'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=false
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='0'
+	c(passno=1, numtets=41218)
+	c(passno=2, numtets=47738, magdeltas=0.3373915327927873)
+	c(passno=3, numtets=54507, magdeltas=0.1649573273266237)
+	c(passno=4, numtets=61423, magdeltas=0.07152759367554024)
+	c(passno=5, numtets=68612, magdeltas=0.0307930888072227)
+	c(passno=6, numtets=76172, magdeltas=0.02422430513685896)
+$end 'SolutionBlock369'
+$begin 'SolutionBlock368'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=41151)
+	c(passno=2, numtets=47618, magdeltas=0.3615239026690552)
+	c(passno=3, numtets=54398, magdeltas=0.09119268641432142)
+	c(passno=4, numtets=61359, magdeltas=0.03800826256536467)
+	c(passno=5, numtets=68657, magdeltas=0.01535894424522538)
+$end 'SolutionBlock368'
+$begin 'SolutionBlock367'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=41684)
+	c(passno=2, numtets=48253, magdeltas=0.6666432532676951)
+	c(passno=3, numtets=55082, magdeltas=0.1861342110362602)
+	c(passno=4, numtets=62189, magdeltas=0.08776351968026643)
+	c(passno=5, numtets=69618, magdeltas=0.04455289838187541)
+	c(passno=6, numtets=77316, magdeltas=0.01664219675593935)
+$end 'SolutionBlock367'
+$begin 'SolutionBlock366'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=39485)
+	c(passno=2, numtets=45714, magdeltas=0.2985655566500137)
+	c(passno=3, numtets=52190, magdeltas=0.05928018666616346)
+	c(passno=4, numtets=58756, magdeltas=0.02805883300727806)
+	c(passno=5, numtets=65670, magdeltas=0.01074547387631363)
+$end 'SolutionBlock366'
+$begin 'SolutionBlock365'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=40572)
+	c(passno=2, numtets=46942, magdeltas=1.418178784276577)
+	c(passno=3, numtets=53560, magdeltas=0.1284638382294649)
+	c(passno=4, numtets=60316, magdeltas=0.03769972401112171)
+	c(passno=5, numtets=67255, magdeltas=0.02248587368090444)
+	c(passno=6, numtets=74415, magdeltas=0.01354804948200103)
+$end 'SolutionBlock365'
+$begin 'SolutionBlock364'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=39826)
+	c(passno=2, numtets=46116, magdeltas=0.2125858668325323)
+	c(passno=3, numtets=52688, magdeltas=0.04181232725297224)
+	c(passno=4, numtets=59351, magdeltas=0.01653989899892439)
+$end 'SolutionBlock364'
+$begin 'SolutionBlock363'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=false
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='0'
+	c(passno=1, numtets=39495)
+	c(passno=2, numtets=45675, magdeltas=0.2092621381950849)
+	c(passno=3, numtets=52046, magdeltas=0.1101704752521854)
+	c(passno=4, numtets=58511, magdeltas=0.06678998991552572)
+	c(passno=5, numtets=65143, magdeltas=0.05103359215705095)
+	c(passno=6, numtets=71915, magdeltas=0.02193943909368037)
+$end 'SolutionBlock363'
+$begin 'SolutionBlock362'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=39641)
+	c(passno=2, numtets=45865, magdeltas=0.1556002389520742)
+	c(passno=3, numtets=52372, magdeltas=0.01383906285144382)
+$end 'SolutionBlock362'
+$begin 'SolutionBlock361'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=39694)
+	c(passno=2, numtets=45959, magdeltas=0.0564647846400253)
+	c(passno=3, numtets=52566, magdeltas=0.05044543044790172)
+	c(passno=4, numtets=59340, magdeltas=0.01154610252359128)
+$end 'SolutionBlock361'
+$begin 'SolutionBlock360'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=39515)
+	c(passno=2, numtets=45568, magdeltas=0.1120073473454151)
+	c(passno=3, numtets=51927, magdeltas=0.02844814052372633)
+	c(passno=4, numtets=58423, magdeltas=0.008051355506356658)
+$end 'SolutionBlock360'
+$begin 'SolutionBlock359'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=39289)
+	c(passno=2, numtets=45480, magdeltas=0.03398040014342487)
+	c(passno=3, numtets=52003, magdeltas=0.01317476039490411)
+$end 'SolutionBlock359'
+$begin 'SolutionBlock358'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=38375)
+	c(passno=2, numtets=44316, magdeltas=0.03653144550133853)
+	c(passno=3, numtets=50545, magdeltas=0.02056138651458552)
+	c(passno=4, numtets=56994, magdeltas=0.005547515230884477)
+$end 'SolutionBlock358'
+$begin 'SolutionBlock357'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=39129)
+	c(passno=2, numtets=45287, magdeltas=0.04877767237157334)
+	c(passno=3, numtets=51731, magdeltas=0.01360206071838765)
+$end 'SolutionBlock357'
+$begin 'SolutionBlock356'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37480)
+	c(passno=2, numtets=43328, magdeltas=0.03104197802224644)
+	c(passno=3, numtets=49384, magdeltas=0.01932511409009088)
+$end 'SolutionBlock356'
+$begin 'SolutionBlock355'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=38247)
+	c(passno=2, numtets=44228, magdeltas=0.02113980526576769)
+	c(passno=3, numtets=50472, magdeltas=0.006484155694727298)
+$end 'SolutionBlock355'
+$begin 'SolutionBlock354'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37128)
+	c(passno=2, numtets=42953, magdeltas=0.05657528017855754)
+	c(passno=3, numtets=49032, magdeltas=0.0167483218709344)
+$end 'SolutionBlock354'
+$begin 'SolutionBlock353'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37193)
+	c(passno=2, numtets=43012, magdeltas=0.03904132356081412)
+	c(passno=3, numtets=49078, magdeltas=0.007375471989059619)
+$end 'SolutionBlock353'
+$begin 'SolutionBlock352'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37772)
+	c(passno=2, numtets=43658, magdeltas=0.0266851099653823)
+	c(passno=3, numtets=49783, magdeltas=0.01043855127829116)
+$end 'SolutionBlock352'
+$begin 'SolutionBlock351'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37207)
+	c(passno=2, numtets=43042, magdeltas=0.01158107297736148)
+$end 'SolutionBlock351'
+$begin 'SolutionBlock350'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=38117)
+	c(passno=2, numtets=43983, magdeltas=0.01765912446441083)
+$end 'SolutionBlock350'
+$begin 'SolutionBlock349'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37379)
+	c(passno=2, numtets=43159, magdeltas=0.01774202009269147)
+$end 'SolutionBlock349'
+$begin 'SolutionBlock348'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37021)
+	c(passno=2, numtets=42768, magdeltas=0.008502823624674407)
+$end 'SolutionBlock348'
+$begin 'SolutionBlock347'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37306)
+	c(passno=2, numtets=43101, magdeltas=0.01361800558635106)
+$end 'SolutionBlock347'
+$begin 'SolutionBlock346'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=36887)
+	c(passno=2, numtets=42506, magdeltas=0.03554685205425279)
+	c(passno=3, numtets=48366, magdeltas=0.01137416626185569)
+$end 'SolutionBlock346'
+$begin 'SolutionBlock345'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=37366)
+	c(passno=2, numtets=43152, magdeltas=0.006754983217372813)
+$end 'SolutionBlock345'
+$begin 'SolutionBlock344'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=35987)
+	c(passno=2, numtets=41530, magdeltas=0.07038705996685507)
+	c(passno=3, numtets=47308, magdeltas=0.03688736278387632)
+	c(passno=4, numtets=53131, magdeltas=0.005055554464686224)
+$end 'SolutionBlock344'
+$begin 'SolutionBlock343'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=35732)
+	c(passno=2, numtets=41295, magdeltas=0.02403606878733779)
+	c(passno=3, numtets=47085, magdeltas=0.01017899814983526)
+$end 'SolutionBlock343'
+$begin 'SolutionBlock342'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=36270)
+	c(passno=2, numtets=41877, magdeltas=0.01778482226240972)
+$end 'SolutionBlock342'
+$begin 'SolutionBlock341'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=35972)
+	c(passno=2, numtets=41539, magdeltas=0.02242659480506437)
+	c(passno=3, numtets=47359, magdeltas=0.006048027626300539)
+$end 'SolutionBlock341'
+$begin 'SolutionBlock340'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=35271)
+	c(passno=2, numtets=40696, magdeltas=0.03692319076795701)
+	c(passno=3, numtets=46315, magdeltas=0.007303971040626024)
+$end 'SolutionBlock340'
+$begin 'SolutionBlock339'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=35535)
+	c(passno=2, numtets=41032, magdeltas=0.02389268841143399)
+	c(passno=3, numtets=46770, magdeltas=1.955926529485612)
+	c(passno=4, numtets=52670, magdeltas=1.719094182011402)
+	c(passno=5, numtets=58616, magdeltas=0.001408659448915359)
+$end 'SolutionBlock339'
 $begin '$index$'
 	$begin '$index$'
-		OptimetricsResults(pos=45710, lin=1108, lvl=0)
-		BlockMapName(pos=8005, lin=158, lvl=0)
-		SolutionBlock332(pos=13049, lin=200, lvl=0)
-		SolutionBlock333(pos=13414, lin=218, lvl=0)
-		SolutionBlock334(pos=13779, lin=236, lvl=0)
-		SolutionBlock335(pos=14345, lin=254, lvl=0)
-		SolutionBlock336(pos=14524, lin=264, lvl=0)
-		SolutionBlock373(pos=23888, lin=481, lvl=0)
-		SolutionBlock338(pos=27179, lin=576, lvl=0)
+		SolutionBlock339(pos=42407, lin=1020, lvl=0)
+		SolutionBlock332(pos=15567, lin=260, lvl=0)
+		SolutionBlock333(pos=15932, lin=278, lvl=0)
+		SolutionBlock334(pos=16297, lin=296, lvl=0)
+		SolutionBlock335(pos=16863, lin=314, lvl=0)
+		SolutionBlock336(pos=17042, lin=324, lvl=0)
+		SolutionBlock374(pos=26419, lin=541, lvl=0)
+		SolutionBlock338(pos=13049, lin=200, lvl=0)
 		SolutionBlock1(pos=370, lin=1, lvl=0)
-		SolutionBlock339(pos=29697, lin=636, lvl=0)
-		SolutionBlock340(pos=30169, lin=650, lvl=0)
-		SolutionBlock341(pos=30527, lin=662, lvl=0)
-		SolutionBlock342(pos=30885, lin=674, lvl=0)
-		SolutionBlock343(pos=31183, lin=685, lvl=0)
-		SolutionBlock344(pos=31540, lin=697, lvl=0)
-		SolutionBlock345(pos=31957, lin=710, lvl=0)
-		SolutionBlock346(pos=32256, lin=721, lvl=0)
-		SolutionBlock347(pos=32613, lin=733, lvl=0)
-		SolutionBlock348(pos=32911, lin=744, lvl=0)
-		SolutionBlock349(pos=33210, lin=755, lvl=0)
-		SolutionBlock350(pos=33508, lin=766, lvl=0)
-		SolutionBlock351(pos=33806, lin=777, lvl=0)
-		SolutionBlock352(pos=34104, lin=788, lvl=0)
-		SolutionBlock353(pos=34460, lin=800, lvl=0)
-		SolutionBlock354(pos=34818, lin=812, lvl=0)
-		SolutionBlock355(pos=35174, lin=824, lvl=0)
-		SolutionBlock356(pos=35532, lin=836, lvl=0)
-		SolutionBlock357(pos=35889, lin=848, lvl=0)
-		SolutionBlock358(pos=36246, lin=860, lvl=0)
-		SolutionBlock359(pos=36663, lin=873, lvl=0)
-		SolutionBlock360(pos=37020, lin=885, lvl=0)
-		SolutionBlock361(pos=37436, lin=898, lvl=0)
-		SolutionBlock362(pos=37851, lin=911, lvl=0)
-		SolutionBlock363(pos=38207, lin=923, lvl=0)
-		SolutionBlock364(pos=38740, lin=938, lvl=0)
-		SolutionBlock365(pos=39155, lin=951, lvl=0)
-		SolutionBlock366(pos=39686, lin=966, lvl=0)
-		SolutionBlock367(pos=40160, lin=980, lvl=0)
-		SolutionBlock368(pos=40692, lin=995, lvl=0)
-		SolutionBlock369(pos=41166, lin=1009, lvl=0)
-		SolutionBlock370(pos=41698, lin=1024, lvl=0)
-		OptimetricsResult1(pos=42171, lin=1038, lvl=0)
+		BlockMapName(pos=8005, lin=158, lvl=0)
+		OptimetricsResults(pos=26784, lin=559, lvl=0)
+		OptimetricsResult1(pos=26866, lin=562, lvl=0)
+		SolutionBlock370(pos=30405, lin=632, lvl=0)
+		SolutionBlock369(pos=30878, lin=646, lvl=0)
+		SolutionBlock368(pos=31410, lin=661, lvl=0)
+		SolutionBlock367(pos=31884, lin=675, lvl=0)
+		SolutionBlock366(pos=32416, lin=690, lvl=0)
+		SolutionBlock365(pos=32890, lin=704, lvl=0)
+		SolutionBlock364(pos=33421, lin=719, lvl=0)
+		SolutionBlock363(pos=33836, lin=732, lvl=0)
+		SolutionBlock362(pos=34369, lin=747, lvl=0)
+		SolutionBlock361(pos=34725, lin=759, lvl=0)
+		SolutionBlock360(pos=35140, lin=772, lvl=0)
+		SolutionBlock359(pos=35556, lin=785, lvl=0)
+		SolutionBlock358(pos=35913, lin=797, lvl=0)
+		SolutionBlock357(pos=36330, lin=810, lvl=0)
+		SolutionBlock356(pos=36687, lin=822, lvl=0)
+		SolutionBlock355(pos=37044, lin=834, lvl=0)
+		SolutionBlock354(pos=37402, lin=846, lvl=0)
+		SolutionBlock353(pos=37758, lin=858, lvl=0)
+		SolutionBlock352(pos=38116, lin=870, lvl=0)
+		SolutionBlock351(pos=38472, lin=882, lvl=0)
+		SolutionBlock350(pos=38770, lin=893, lvl=0)
+		SolutionBlock349(pos=39068, lin=904, lvl=0)
+		SolutionBlock348(pos=39366, lin=915, lvl=0)
+		SolutionBlock347(pos=39665, lin=926, lvl=0)
+		SolutionBlock346(pos=39963, lin=937, lvl=0)
+		SolutionBlock345(pos=40320, lin=949, lvl=0)
+		SolutionBlock344(pos=40619, lin=960, lvl=0)
+		SolutionBlock343(pos=41036, lin=973, lvl=0)
+		SolutionBlock342(pos=41393, lin=985, lvl=0)
+		SolutionBlock341(pos=41691, lin=996, lvl=0)
+		SolutionBlock340(pos=42049, lin=1008, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=45792, lin=1111, lvl=0)
+		$index$(pos=42879, lin=1034, lvl=0)
 	$end '$index$'
 $end '$index$'
