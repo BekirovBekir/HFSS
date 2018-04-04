@@ -1,5 +1,5 @@
 IsBigEndian false
 $begin 'ManagedFiles'
 	radfld[1: 'RAD56BE715615187273571.tmp']
-	svcache[1: 'HDR56C1715615187273582.tmp']
+	svcache[2: 'HDR56C1715615187273582.tmp', 'min63C43848152287256913.tmp']
 $end 'ManagedFiles'

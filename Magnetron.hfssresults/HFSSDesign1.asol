@@ -1,20 +1,20 @@
 $begin '$base_index$'
   $begin 'properties'
     all_levels=000000000000
-    time(year=000000002018, month=000000000004, day=000000000004, hour=000000000022, min=000000000045, sec=000000000016)
+    time(year=000000002018, month=000000000004, day=000000000004, hour=000000000023, min=000000000009, sec=000000000029)
     version=000000000000
   $end 'properties'
   $begin '$base_index$'
-    $index$(pos=000000014667, lin=000000000344, lvl=000000000000)
+    $index$(pos=000000016942, lin=000000000428, lvl=000000000000)
   $end '$base_index$'
 $end '$base_index$'
 $begin 'SolutionBlock1'
 	ProductName=''
 	CircuitName='HFSSDesign1'
-	VersionID=5107
+	VersionID=5184
 	PostProcess=false
 	LossLess=true
-	NextUniqueID=5172
+	NextUniqueID=5271
 	MoveBackwards=false
 	$begin 'VariationIDs'
 		Map(V='', ID=91)
@@ -155,23 +155,153 @@ $begin 'SolutionBlock1'
 	$end 'VariationIDs'
 	$begin 'LinkedDataList'
 	$end 'LinkedDataList'
+	$begin 'InitialMeshes'
+		M(VID=3099, Ver=5184, Dir='DV3099_V5184.imesh/')
+	$end 'InitialMeshes'
 	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=3099, Ver=5184, Dir='DV3099_MI0_V5184.sd/')
+		$end 'SubData'
 	$end 'MI'
 $end 'SolutionBlock1'
 $begin 'BlockMapName'
 	FileHeader='SolutionBlock1'
-	'SolutionKey(SimSetup=2591, Instance=\'SetupDefinition\', Solution=-1, VersionID=5107)'='SolutionBlock503'
-	'SolutionKey(SimSetup=2591, Instance=\'SolutionDefinition\', Solution=2592, VersionID=5107)'='SolutionBlock500'
-	'SolutionKey(SimSetup=2591, Instance=\'SolutionDefinition\', Solution=2593, VersionID=5107)'='SolutionBlock501'
-	'SolutionKey(SimSetup=2591, Instance=\'SolutionDefinition\', Solution=2755, VersionID=5107)'='SolutionBlock502'
-	'SolutionKey(SimSetup=3349, Instance=\'SetupDefinition\', Solution=-1, VersionID=5107)'='SolutionBlock506'
-	'SolutionKey(SimSetup=3349, Instance=\'SolutionDefinition\', Solution=3350, VersionID=5107)'='SolutionBlock504'
-	'SolutionKey(SimSetup=3349, Instance=\'SolutionDefinition\', Solution=3351, VersionID=5107)'='SolutionBlock505'
+	'SolutionKey(SimSetup=2591, Instance=\'SetupDefinition\', Solution=-1, VersionID=5184)'='SolutionBlock510'
+	'SolutionKey(SimSetup=2591, Instance=\'SolutionDefinition\', Solution=2592, VersionID=5185)'='SolutionBlock507'
+	'SolutionKey(SimSetup=2591, Instance=\'SolutionDefinition\', Solution=2593, VersionID=5185)'='SolutionBlock508'
+	'SolutionKey(SimSetup=2591, Instance=\'SolutionDefinition\', Solution=2755, VersionID=5185)'='SolutionBlock509'
+	'SolutionKey(SimSetup=3349, Instance=\'$len=\\\'0mm\\\' $widht=\\\'0mm\\\'\', Solution=-3, VersionID=5184)'='SolutionBlock514'
+	'SolutionKey(SimSetup=3349, Instance=\'SetupDefinition\', Solution=-1, VersionID=5184)'='SolutionBlock513'
+	'SolutionKey(SimSetup=3349, Instance=\'SolutionDefinition\', Solution=3350, VersionID=5185)'='SolutionBlock511'
+	'SolutionKey(SimSetup=3349, Instance=\'SolutionDefinition\', Solution=3351, VersionID=5260)'='SolutionBlock516'
 $end 'BlockMapName'
-$begin 'SolutionBlock500'
+$begin 'SolutionBlock511'
+	SolutionName='AdaptivePass'
+	SolutionID=3350
+	V=5185
+	$begin 'States'
+		F(VID=3099, Ver=5185)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(25000000000, 37000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=1
+			M(VID=3099, Ver=5185, File='DV3099_SOL3350_M1_V5185.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			M(VID=3099, Ver=5185, File='DV3099_SOL3350_M2_V5185.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			M(VID=3099, Ver=5185, File='DV3099_SOL3350_M3_V5185.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'A'
+		$begin 'SubData'
+			ID=0
+			A(VID=3099, Ver=5185, File='DV3099_SOL3350_A0_V5185.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=1
+			A(VID=3099, Ver=5185, File='DV3099_SOL3350_A1_V5185.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=2
+			A(VID=3099, Ver=5185, File='DV3099_SOL3350_A2_V5185.sd')
+		$end 'SubData'
+		$begin 'SubData'
+			ID=3
+			A(VID=3099, Ver=5185, File='DV3099_SOL3350_A3_V5185.sd')
+		$end 'SubData'
+	$end 'A'
+$end 'SolutionBlock511'
+$begin 'SolutionBlock513'
+	SimSetupID=3349
+	SimSetupName='Setup2'
+	VersionID=5184
+	IsImported=false
+	IsTable=false
+	SolveSetupID=4
+	$begin 'CurrMeshes'
+		M(VID=3099, Ver=5184, Dir='DV3099_S3349_V5184.cmesh/')
+	$end 'CurrMeshes'
+	$begin 'WaveAdapt'
+		WA(VID=3099, Ver=5184, A=1)
+	$end 'WaveAdapt'
+	$begin 'LastPassNumbers'
+		LP(VID=3099, Ver=5184, P=3)
+	$end 'LastPassNumbers'
+	$begin 'Profiles'
+		P(VID=3099, Ver=5184, File='DV3099_S3349_V5184.profile')
+	$end 'Profiles'
+	$begin 'MI'
+		$begin 'SubData'
+			ID=0
+			MI(VID=3099, Ver=5184, Dir='DV3099_S3349_MI0_V5184.sd/')
+		$end 'SubData'
+	$end 'MI'
+$end 'SolutionBlock513'
+$begin 'SolutionBlock516'
+	SolutionName='LastAdaptive'
+	SolutionID=3351
+	V=5260
+	$begin 'States'
+		F(VID=3099, Ver=5260)
+	$end 'States'
+	$begin 'Definition'
+		SamplingInterpolation=false
+		Frequencies(25000000000)
+		SolutionType=6
+		CenterFreq=0
+	$end 'Definition'
+	IsImported=false
+	IsTable=false
+	IsMatrixDataTable=false
+	SweepID=-1
+	KeepAllFastSweepFields=false
+	$begin 'M'
+		$begin 'SubData'
+			ID=0
+			M(VID=3099, Ver=5260, File='DV3099_SOL3351_M0_V5260.sd')
+		$end 'SubData'
+	$end 'M'
+	$begin 'Fields'
+		IDDblMap(5238, 37000000000, 5268, 25000000000)
+		$begin 'DataMap'
+			VID=3099
+			Ver=5260
+			F(DblID=5268, Dir='DV3099_S3351_V5260_F5268/')
+		$end 'DataMap'
+	$end 'Fields'
+$end 'SolutionBlock516'
+$begin 'SolutionBlock514'
+	ConvSetupName='DrivenDeltaSConvNOV'
+	IsConverged=true
+	MaxPasses='6'
+	MinPasses='1'
+	ConvTarget='0.02'
+	ConvTargetConsecPasses='1'
+	ConvCurrentConsecPasses='1'
+	c(passno=1, numtets=14802)
+	c(passno=2, numtets=16287, magdeltas=0.8171947930506266)
+	c(passno=3, numtets=17839, magdeltas=0.0008861898262464014)
+$end 'SolutionBlock514'
+$begin 'SolutionBlock507'
 	SolutionName='AdaptivePass'
 	SolutionID=2592
-	V=5107
+	V=5185
 	$begin 'States'
 	$end 'States'
 	$begin 'Definition'
@@ -185,11 +315,11 @@ $begin 'SolutionBlock500'
 	IsMatrixDataTable=false
 	SweepID=-1
 	KeepAllFastSweepFields=false
-$end 'SolutionBlock500'
-$begin 'SolutionBlock501'
+$end 'SolutionBlock507'
+$begin 'SolutionBlock508'
 	SolutionName='LastAdaptive'
 	SolutionID=2593
-	V=5107
+	V=5185
 	$begin 'States'
 	$end 'States'
 	$begin 'Definition'
@@ -203,11 +333,11 @@ $begin 'SolutionBlock501'
 	IsMatrixDataTable=false
 	SweepID=-1
 	KeepAllFastSweepFields=false
-$end 'SolutionBlock501'
-$begin 'SolutionBlock502'
+$end 'SolutionBlock508'
+$begin 'SolutionBlock509'
 	SolutionName='Sweep1'
 	SolutionID=2755
-	V=5107
+	V=5185
 	$begin 'States'
 	$end 'States'
 	$begin 'Definition'
@@ -221,63 +351,17 @@ $begin 'SolutionBlock502'
 	IsMatrixDataTable=false
 	SweepID=0
 	KeepAllFastSweepFields=false
-$end 'SolutionBlock502'
-$begin 'SolutionBlock503'
+$end 'SolutionBlock509'
+$begin 'SolutionBlock510'
 	SimSetupID=2591
 	SimSetupName='Setup1'
-	VersionID=5107
+	VersionID=5184
 	IsImported=false
 	IsTable=false
 	SolveSetupID=3
 	$begin 'MI'
 	$end 'MI'
-$end 'SolutionBlock503'
-$begin 'SolutionBlock504'
-	SolutionName='AdaptivePass'
-	SolutionID=3350
-	V=5107
-	$begin 'States'
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(37000000000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-$end 'SolutionBlock504'
-$begin 'SolutionBlock505'
-	SolutionName='LastAdaptive'
-	SolutionID=3351
-	V=5107
-	$begin 'States'
-	$end 'States'
-	$begin 'Definition'
-		SamplingInterpolation=false
-		Frequencies(37000000000)
-		SolutionType=6
-		CenterFreq=0
-	$end 'Definition'
-	IsImported=false
-	IsTable=false
-	IsMatrixDataTable=false
-	SweepID=-1
-	KeepAllFastSweepFields=false
-$end 'SolutionBlock505'
-$begin 'SolutionBlock506'
-	SimSetupID=3349
-	SimSetupName='Setup2'
-	VersionID=5107
-	IsImported=false
-	IsTable=false
-	SolveSetupID=4
-	$begin 'MI'
-	$end 'MI'
-$end 'SolutionBlock506'
+$end 'SolutionBlock510'
 $begin 'OptimetricsResult1'
 	vi('$len', '0mm', '0mm', '0mm')
 	vi('$widht', '0mm', '0mm', '0mm')
@@ -353,19 +437,19 @@ $begin 'OptimetricsResults'
 $end 'OptimetricsResults'
 $begin '$index$'
 	$begin '$index$'
-		OptimetricsResults(pos=14585, lin=341, lvl=0)
-		SolutionBlock500(pos=8662, lin=161, lvl=0)
-		SolutionBlock501(pos=9027, lin=179, lvl=0)
-		SolutionBlock502(pos=9392, lin=197, lvl=0)
-		SolutionBlock503(pos=9958, lin=215, lvl=0)
-		SolutionBlock504(pos=10137, lin=225, lvl=0)
-		SolutionBlock505(pos=10502, lin=243, lvl=0)
-		SolutionBlock506(pos=10867, lin=261, lvl=0)
+		OptimetricsResults(pos=16860, lin=425, lvl=0)
+		BlockMapName(pos=8005, lin=158, lvl=0)
+		SolutionBlock514(pos=11488, lin=279, lvl=0)
+		SolutionBlock507(pos=11846, lin=291, lvl=0)
+		SolutionBlock508(pos=12211, lin=309, lvl=0)
+		SolutionBlock509(pos=12576, lin=327, lvl=0)
+		SolutionBlock510(pos=13142, lin=345, lvl=0)
+		SolutionBlock511(pos=8985, lin=169, lvl=0)
+		SolutionBlock516(pos=10782, lin=246, lvl=0)
+		SolutionBlock513(pos=10159, lin=220, lvl=0)
 		SolutionBlock1(pos=370, lin=1, lvl=0)
-		BlockMapName(pos=7810, lin=151, lvl=0)
-		OptimetricsResult1(pos=11046, lin=271, lvl=0)
+		OptimetricsResult1(pos=13321, lin=355, lvl=0)
 		$base_index$(pos=0, lin=1, lvl=0)
-		$index$(pos=14667, lin=344, lvl=0)
+		$index$(pos=16942, lin=428, lvl=0)
 	$end '$index$'
 $end '$index$'
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
