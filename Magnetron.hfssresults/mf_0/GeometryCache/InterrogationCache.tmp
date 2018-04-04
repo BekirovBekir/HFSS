@@ -1,5 +1,5 @@
 $begin 'CacheDataVersion'
-	DataVersion=290
+	DataVersion=342
 $end 'CacheDataVersion'
 $begin 'InterrogationCache'
 	Version=1
@@ -18,33 +18,31 @@ $begin 'InterrogationCache'
 	$begin 'BodyCaches'
 		$begin '2270'
 			$begin 'BoundingBox'
-				Low[3: -6.106226635438361e-016, -3.1099999999999999, -3.5527136788005009e-015]
+				Low[3: -3.1099999999999999, -3.1100000000000003, -3.5527136788005009e-015]
 				High[3: 14.6, 3.1100000000000003, 7.2000000000000055]
 				Exact=false
 				Valid=true
 			$end 'BoundingBox'
 		$end '2270'
 		$begin '2330'
-			$begin 'BoundingBox'
-				Low[3: -6.404671350000001, -3.1099999999999999, 0]
-				High[3: 14.600000000000001, 3.1099999999999999, 7.2000000000000002]
-				Exact=false
-				Valid=true
-			$end 'BoundingBox'
 		$end '2330'
 		$begin '5124'
 		$end '5124'
-		$begin '5294'
-			$begin 'CheckStatus'
-				CheckLevel=20
-				Status=true
-			$end 'CheckStatus'
+		$begin '7986'
 			$begin 'BoundingBox'
-				Low[3: -6.404671350000001, -0.15934812500000001, 0]
-				High[3: 1.6453286499999997, 0.15934812500000001, 7.2000000000000002]
+				Low[3: -4, -4, 3.6000000000000001]
+				High[3: 14.5, 4, 3.6000000000000001]
 				Exact=false
 				Valid=true
 			$end 'BoundingBox'
-		$end '5294'
+		$end '7986'
+		$begin '8008'
+			$begin 'BoundingBox'
+				Low[3: -1.2, -1.2, 0]
+				High[3: 1.2, 1.2, 7.2000000000000002]
+				Exact=false
+				Valid=true
+			$end 'BoundingBox'
+		$end '8008'
 	$end 'BodyCaches'
 $end 'InterrogationCache'
