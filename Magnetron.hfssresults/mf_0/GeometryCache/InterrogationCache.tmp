@@ -1,5 +1,5 @@
 $begin 'CacheDataVersion'
-	DataVersion=351
+	DataVersion=403
 $end 'CacheDataVersion'
 $begin 'InterrogationCache'
 	Version=1
@@ -18,8 +18,8 @@ $begin 'InterrogationCache'
 	$begin 'BodyCaches'
 		$begin '2270'
 			$begin 'BoundingBox'
-				Low[3: -3.2000000000000002, -3.2000000000000002, -3.5527136788005009e-015]
-				High[3: 14.6, 3.2000000000000002, 7.2000000000000055]
+				Low[3: -3.2000000000000002, -3.2000000000000002, -4.4408920985006262e-016]
+				High[3: 14.6, 3.2000000000000002, 7.2000000000000002]
 				Exact=false
 				Valid=true
 			$end 'BoundingBox'
@@ -32,12 +32,10 @@ $begin 'InterrogationCache'
 				Valid=true
 			$end 'BoundingBox'
 		$end '2330'
-		$begin '5124'
-		$end '5124'
 		$begin '7986'
 			$begin 'BoundingBox'
-				Low[3: -4, -4, 3.6000000000000001]
-				High[3: 14.5, 4, 3.6000000000000001]
+				Low[3: -4, -4, 0.60000000000000009]
+				High[3: 14.5, 4, 0.60000000000000009]
 				Exact=false
 				Valid=true
 			$end 'BoundingBox'
@@ -51,30 +49,28 @@ $begin 'InterrogationCache'
 			$end 'BoundingBox'
 		$end '8008'
 		$begin '8029'
-			$begin 'Properties'
-				Volume='0'
-				Area='0.72009074296409703'
-				Valid=true
-			$end 'Properties'
 			$begin 'BoundingBox'
-				Low[3: 3.0995967479657724, 0.049999999999998837, 0]
-				High[3: 3.1996093511552317, 0.050000000000000003, 7.2000000000000002]
+				Low[3: 3.0995967479657707, 0.049999999999998837, 0]
+				High[3: 3.1996093511552299, 0.050000000000000003, 7.2000000000000002]
 				Exact=false
 				Valid=true
 			$end 'BoundingBox'
 		$end '8029'
 		$begin '8041'
-			$begin 'Properties'
-				Volume='0'
-				Area='0.72009074296409703'
-				Valid=true
-			$end 'Properties'
 			$begin 'BoundingBox'
-				Low[3: 3.0995967479657738, -0.050000000000000017, 0]
-				High[3: 3.199609351155233, -0.049999999999998844, 7.2000000000000002]
+				Low[3: 3.099596747965772, -0.050000000000000017, 0]
+				High[3: 3.1996093511552313, -0.049999999999998844, 7.2000000000000002]
 				Exact=false
 				Valid=true
 			$end 'BoundingBox'
 		$end '8041'
+		$begin '9957'
+			$begin 'BoundingBox'
+				Low[3: -4, -4, 6.5999999999999996]
+				High[3: 14.5, 4, 6.5999999999999996]
+				Exact=false
+				Valid=true
+			$end 'BoundingBox'
+		$end '9957'
 	$end 'BodyCaches'
 $end 'InterrogationCache'

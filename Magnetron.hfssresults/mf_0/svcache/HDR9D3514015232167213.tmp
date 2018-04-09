@@ -1,0 +1,55 @@
+SimValueCacheVersionID=1
+$begin 'SimValueInfos'
+	NextUniqueID=1
+	MoveBackwards=false
+	$begin 'SimValue'
+		ID=0
+		$begin 'SimValueParams'
+			QuantityName='Zo(Port2)'
+			ValueState(90, 15, 1, 2)
+		$end 'SimValueParams'
+	$end 'SimValue'
+$end 'SimValueInfos'
+$begin 'SimValueCache'
+	$begin 'DesignMap'
+		DesignID=0
+		$begin 'SolutionMap'
+			$begin 'ContextMap'
+				SolutionID=2592
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=2593
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=2755
+				$begin 'VersionMap'
+					$begin 'ReportTypeSolnDef'
+						ReportType=0
+						SimValueContext(3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+					$end 'ReportTypeSolnDef'
+					$begin 'MajorVVMap'
+						VersionID=5714
+						$begin 'MinorVVMap'
+							MajorVariation='$len=\'0.5mm\' $widht=\'0mm\''
+							MinorCacheFile='min9D3514015232167214.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='$len=\'0mm\' $widht=\'0mm\''
+							MinorCacheFile='min1C4C5140152321816912.tmp'
+						$end 'MinorVVMap'
+						$begin 'MinorVVMap'
+							MajorVariation='$len=\'0.5mm\' $widht=\'0.03mm\''
+							MinorCacheFile='min9D3514015232167215.tmp'
+						$end 'MinorVVMap'
+					$end 'MajorVVMap'
+				$end 'VersionMap'
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=3350
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=3351
+			$end 'ContextMap'
+		$end 'SolutionMap'
+	$end 'DesignMap'
+$end 'SimValueCache'
