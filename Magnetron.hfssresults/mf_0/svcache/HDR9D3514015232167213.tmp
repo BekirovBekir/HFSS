@@ -35,6 +35,24 @@ $begin 'SimValueCache'
 			$begin 'ContextMap'
 				SolutionID=3351
 			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=6077
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=6078
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=6157
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=6219
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=6220
+			$end 'ContextMap'
+			$begin 'ContextMap'
+				SolutionID=6223
+			$end 'ContextMap'
 		$end 'SolutionMap'
 	$end 'DesignMap'
 $end 'SimValueCache'

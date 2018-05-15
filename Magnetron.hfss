@@ -148,7 +148,7 @@ $begin 'AnsoftProject'
 			WorkingCS=1
 			$begin 'GeometryCore'
 				BlockVersionID=3
-				DataVersion=411
+				DataVersion=430
 				NativeKernel='ACIS'
 				NativeKernelVersionID=4
 				Units='mm'
@@ -4709,7 +4709,7 @@ $begin 'AnsoftProject'
 				MoveBackwards=false
 			$end 'HfssGlobalData'
 			$begin 'SolveSetups'
-				NextUniqueID=5
+				NextUniqueID=7
 				MoveBackwards=false
 				$begin 'Setup1'
 					ID=3
@@ -4791,6 +4791,98 @@ $begin 'AnsoftProject'
 					$end 'Sweeps'
 					DerivativesOnlyForLastPass=false
 				$end 'Setup2'
+				$begin 'Setup3'
+					ID=5
+					SetupType='HfssDriven'
+					Frequency='37.55GHz'
+					PortsOnly=false
+					MaxDeltaS=0.02
+					UseMatrixConv=false
+					MaximumPasses=6
+					MinimumPasses=1
+					MinimumConvergedPasses=1
+					PercentRefinement=30
+					IsEnabled=true
+					BasisOrder=1
+					UseIterativeSolver=false
+					DoLambdaRefine=true
+					DoMaterialLambda=true
+					SetLambdaTarget=false
+					Target=0.3333
+					UseMaxTetIncrease=false
+					PortAccuracy=2
+					UseABCOnPort=false
+					SetPortMinMaxTri=false
+					PortMinTri=100
+					PortMaxTri=500
+					EnableSolverDomains=false
+					SaveRadFieldsOnly=false
+					SaveAnyFields=true
+					NoAdditionalRefinementOnImport=false
+					$begin 'Sweeps'
+						NextUniqueID=1
+						MoveBackwards=false
+						$begin 'Sweep'
+							ID=0
+							IsEnabled=true
+							SetupType='LinearStep'
+							StartValue='37GHz'
+							StopValue='38GHz'
+							StepSize='0.02GHz'
+							Type='Discrete'
+							SaveFields=true
+							SaveRadFields=false
+							ExtrapToDC=false
+						$end 'Sweep'
+					$end 'Sweeps'
+					DerivativesOnlyForLastPass=false
+				$end 'Setup3'
+				$begin 'Setup4'
+					ID=6
+					SetupType='HfssDriven'
+					Frequency='37.46GHz'
+					PortsOnly=false
+					MaxDeltaS=0.02
+					UseMatrixConv=false
+					MaximumPasses=6
+					MinimumPasses=1
+					MinimumConvergedPasses=1
+					PercentRefinement=30
+					IsEnabled=true
+					BasisOrder=1
+					UseIterativeSolver=false
+					DoLambdaRefine=true
+					DoMaterialLambda=true
+					SetLambdaTarget=false
+					Target=0.3333
+					UseMaxTetIncrease=false
+					PortAccuracy=2
+					UseABCOnPort=false
+					SetPortMinMaxTri=false
+					PortMinTri=100
+					PortMaxTri=500
+					EnableSolverDomains=false
+					SaveRadFieldsOnly=false
+					SaveAnyFields=true
+					NoAdditionalRefinementOnImport=false
+					$begin 'Sweeps'
+						NextUniqueID=1
+						MoveBackwards=false
+						$begin 'Sweep'
+							ID=0
+							IsEnabled=true
+							SetupType='LinearStep'
+							StartValue='37.4GHz'
+							StopValue='37.52GHz'
+							StepSize='0.005GHz'
+							Type='Discrete'
+							SaveFields=true
+							SaveRadFields=false
+							ExtrapToDC=false
+						$end 'Sweep'
+					$end 'Sweeps'
+					DerivativesOnlyForLastPass=false
+				$end 'Setup4'
 			$end 'SolveSetups'
 		$end 'AnalysisSetup'
 		$begin 'Optimetrics'
@@ -4871,10 +4963,10 @@ $begin 'AnsoftProject'
 						unit=154
 						m_nLevels=15
 						minvalue=1
-						maxvalue=56164.1
-						log=true
+						maxvalue=300000
+						log=false
 						IntrinsicMin=0
-						IntrinsicMax=98230.8984375
+						IntrinsicMax=782056.6875
 						LimitFieldValuePrecision=false
 						FieldValuePrecisionDigits=4
 						ScaleType=1
@@ -4888,10 +4980,10 @@ $begin 'AnsoftProject'
 					$end 'Marker3DSettings'
 					$begin 'Arrow3DSettings'
 						ArrowType=1
-						ArrowMapSize=true
+						ArrowMapSize=false
 						ArrowMapColor=true
 						ShowArrowTail=true
-						ArrowSize=0.239883288741112
+						ArrowSize=0.0478630103170872
 					$end 'Arrow3DSettings'
 				$end 'QuantityFolder_1'
 				$begin 'QuantityFolder_2'
@@ -4934,14 +5026,14 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_1'
 					PlotName='Mag_E1'
 					PlotDefinitionId=49
-					VersionID=139
-					SolutionId=2755
+					VersionID=184
+					SolutionId=6157
 					QuantityId=2
 					PlotFolder='E Field'
 					UserSpecifyName=0
 					UserSpecifyFolder=0
 					StreamlinePlot=false
-					IntrinsicVar='Freq=\'37.6GHz\' Phase=\'0deg\''
+					IntrinsicVar='Freq=\'37.58GHz\' Phase=\'0deg\''
 					FieldPlotGeometry(1, 128, 0, 1, 2680)
 					FilterIds(1, 2)
 					$begin 'PlotOnSurfaceSettings'
@@ -4964,7 +5056,7 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_2'
 					PlotName='Mag_H1'
 					PlotDefinitionId=50
-					VersionID=82
+					VersionID=83
 					SolutionId=2755
 					QuantityId=3
 					PlotFolder='H Field'
@@ -5024,14 +5116,14 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_4'
 					PlotName='Vector_E1'
 					PlotDefinitionId=56
-					VersionID=9
-					SolutionId=2755
+					VersionID=11
+					SolutionId=6157
 					QuantityId=10
 					PlotFolder='E Field'
 					UserSpecifyName=0
 					UserSpecifyFolder=0
 					StreamlinePlot=false
-					IntrinsicVar='Freq=\'37.7GHz\' Phase=\'0deg\''
+					IntrinsicVar='Freq=\'37.56GHz\' Phase=\'0deg\''
 					FieldPlotGeometry(1, 128, 0, 1, 2680)
 					FilterIds(1, 2)
 					$begin 'PlotOnSurfaceSettings'
@@ -5054,16 +5146,16 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_5'
 					PlotName='Mag_E3'
 					PlotDefinitionId=59
-					VersionID=5
-					SolutionId=2755
+					VersionID=14
+					SolutionId=6157
 					QuantityId=2
 					PlotFolder='E Field'
 					UserSpecifyName=0
 					UserSpecifyFolder=0
 					StreamlinePlot=false
-					IntrinsicVar='Freq=\'37.7GHz\' Phase=\'0deg\''
+					IntrinsicVar='Freq=\'37.58GHz\' Phase=\'0deg\''
 					FieldPlotGeometry(1, 128, 0, 1, -2)
-					FilterIds(0)
+					FilterIds(1, 2)
 					$begin 'PlotOnSurfaceSettings'
 						Filled=false
 						IsoValType='Fringe'
@@ -5182,16 +5274,6 @@ $begin 'AnsoftProject'
 								Increment=0.0872664625997165
 								CreateIndexedSubsweepFlag=false
 							$end 'PostprocessSweep'
-							$begin 'Sweep'
-								Variable='$len'
-								Column='0mm;0.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='$widht'
-								Column='0mm;0.03mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 						IsPortOnly=false
 					$end 'SimDataExtractor'
@@ -5200,6 +5282,7 @@ $begin 'AnsoftProject'
 					ID=2593
 					Name='LastAdaptive'
 					$begin 'SimDataExtractor'
+						SimValue('Mag_E', 1, 154, false, SimValueID=6156, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -5260,12 +5343,12 @@ $begin 'AnsoftProject'
 					ID=2755
 					Name='Sweep1'
 					$begin 'SimDataExtractor'
-						SimValue('Zo(Port2)', 2, 90, false, SimValueID=5935, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=5936, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Vector_E', 1, 154, false, SimValueID=5939, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_H', 1, 107, false, SimValueID=5940, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=5978, 3, 0, 2, 0, false, false, 9958, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=5979, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Zo(Port2)', 2, 90, false, SimValueID=6070, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=6071, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_H', 1, 107, false, SimValueID=6072, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=6073, 3, 0, 2, 0, false, false, 9958, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Vector_E', 1, 154, false, SimValueID=6074, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=6075, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -5378,6 +5461,129 @@ $begin 'AnsoftProject'
 								Increment=0.0872664625997165
 								CreateIndexedSubsweepFlag=false
 							$end 'PostprocessSweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=3351
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='35GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='$len'
+								Column='0mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='$widht'
+								Column='0mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=6076
+				Name='Setup3'
+				$begin 'Solution'
+					ID=6077
+					Name='AdaptivePass'
+					$begin 'SimDataExtractor'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=6078
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						SimValue('Mag_E', 1, 154, false, SimValueID=6155, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='37.55GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
 							$begin 'Sweep'
 								Variable='$len'
 								Column='0mm'
@@ -5393,15 +5599,150 @@ $begin 'AnsoftProject'
 					$end 'SimDataExtractor'
 				$end 'Solution'
 				$begin 'Solution'
-					ID=3351
-					Name='LastAdaptive'
+					ID=6157
+					Name='Sweep'
 					$begin 'SimDataExtractor'
-						SimValue('Mag_H', 1, 107, false, SimValueID=5937, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=5938, 3, 0, 2, 0, false, false, 9958, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=6216, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=6217, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Vector_E', 1, 154, false, SimValueID=6293, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
-								Column='35GHz'
+								Column='37GHz;37.02GHz;37.04GHz;37.06GHz;37.08GHz;37.1GHz;37.12GHz;37.14GHz;37.16GHz;37.18GHz;37.2GHz;37.22GHz;37.24GHz;37.26GHz;37.28GHz;37.3GHz;37.32GHz;37.34GHz;37.36GHz;37.38GHz;37.4GHz;37.42GHz;37.44GHz;37.46GHz;37.48GHz;37.5GHz;37.52GHz;37.54GHz;37.56GHz;37.58GHz;37.6GHz;37.62GHz;37.64GHz;37.66GHz;37.68GHz;37.7GHz;37.72GHz;37.74GHz;37.76GHz;37.78GHz;37.8GHz;37.82GHz;37.84GHz;37.86GHz;37.88GHz;37.9GHz;37.92GHz;37.94GHz;37.96GHz;37.98GHz;38GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='$len'
+								Column='0mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='$widht'
+								Column='0mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+			$end 'SimSetup'
+			$begin 'SimSetup'
+				TypeName='BaseSetup'
+				ID=6218
+				Name='Setup4'
+				$begin 'Solution'
+					ID=6219
+					Name='AdaptivePass'
+					$begin 'SimDataExtractor'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=6220
+					Name='LastAdaptive'
+					$begin 'SimDataExtractor'
+						SimValue('Mag_E', 1, 154, false, SimValueID=6266, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='37.46GHz'
+								Units='GHz'
+							$end 'Sweep'
+							$begin 'PostprocessSweep'
+								Variable='NormalizedDistance'
+								RegularSweep=1
+								Units=''
+								Minimum=0
+								Maximum=1
+								Increment=0.01
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phi'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Theta'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'PostprocessSweep'
+								Variable='Phase'
+								RegularSweep=1
+								Units='deg'
+								Minimum=0
+								Maximum=6.28318530717959
+								Increment=0.0872664625997165
+								CreateIndexedSubsweepFlag=false
+							$end 'PostprocessSweep'
+							$begin 'Sweep'
+								Variable='$len'
+								Column='0mm'
+								Units='mm'
+							$end 'Sweep'
+							$begin 'Sweep'
+								Variable='$widht'
+								Column='0mm'
+								Units='mm'
+							$end 'Sweep'
+						$end 'Sweeps'
+						IsPortOnly=false
+					$end 'SimDataExtractor'
+				$end 'Solution'
+				$begin 'Solution'
+					ID=6223
+					Name='Sweep'
+					$begin 'SimDataExtractor'
+						SimValue('Mag_E', 1, 154, false, SimValueID=6292, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						$begin 'Sweeps'
+							$begin 'Sweep'
+								Variable='Freq'
+								Column='37.4GHz;37.405GHz;37.41GHz;37.415GHz;37.42GHz;37.425GHz;37.43GHz;37.435GHz;37.44GHz;37.445GHz;37.45GHz;37.455GHz;37.46GHz;37.465GHz;37.47GHz;37.475GHz;37.48GHz;37.485GHz;37.49GHz;37.495GHz;37.5GHz;37.505GHz;37.51GHz;37.515GHz;37.52GHz'
 								Units='GHz'
 							$end 'Sweep'
 							$begin 'PostprocessSweep'
@@ -5470,6 +5811,20 @@ $begin 'AnsoftProject'
 					Soln(N='AdaptivePass', V=5980)
 					Soln(N='LastAdaptive', V=5980)
 				$end 'Setup'
+				$begin 'Setup'
+					N='Setup3'
+					V=0
+					Soln(N='AdaptivePass', V=0)
+					Soln(N='LastAdaptive', V=0)
+					Soln(N='Sweep', V=0)
+				$end 'Setup'
+				$begin 'Setup'
+					N='Setup4'
+					V=0
+					Soln(N='AdaptivePass', V=0)
+					Soln(N='LastAdaptive', V=0)
+					Soln(N='Sweep', V=0)
+				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
 				$begin 'Setup'
@@ -5484,6 +5839,20 @@ $begin 'AnsoftProject'
 					I=3349
 					Soln(N='AdaptivePass', I=3350)
 					Soln(N='LastAdaptive', I=3351)
+				$end 'Setup'
+				$begin 'Setup'
+					N='Setup3'
+					I=6076
+					Soln(N='AdaptivePass', I=6077)
+					Soln(N='LastAdaptive', I=6078)
+					Soln(N='Sweep', I=6157)
+				$end 'Setup'
+				$begin 'Setup'
+					N='Setup4'
+					I=6218
+					Soln(N='AdaptivePass', I=6219)
+					Soln(N='LastAdaptive', I=6220)
+					Soln(N='Sweep', I=6223)
 				$end 'Setup'
 			$end 'ID Map'
 		$end 'SolutionManager'
@@ -5520,6 +5889,33 @@ $begin 'AnsoftProject'
 				DesignPoint=''
 				IntrinsicVarVals=''
 			$end 'Setup_2'
+			$begin 'Setup_3'
+				AnimationName='Animation4'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '37GHz', '37.02GHz', '37.04GHz', '37.06GHz', '37.08GHz', '37.1GHz', '37.12GHz', '37.14GHz', '37.16GHz', '37.18GHz', '37.2GHz', '37.22GHz', '37.24GHz', '37.26GHz', '37.28GHz', '37.3GHz', '37.32GHz', '37.34GHz', '37.36GHz', '37.38GHz', '37.4GHz', '37.42GHz', '37.44GHz', '37.46GHz', '37.48GHz', '37.5GHz', '37.52GHz', '37.54GHz', '37.56GHz', '37.58GHz', '37.6GHz', '37.62GHz', '37.64GHz', '37.66GHz', '37.68GHz', '37.7GHz', '37.72GHz', '37.74GHz', '37.76GHz', '37.78GHz', '37.8GHz', '37.82GHz', '37.84GHz', '37.86GHz', '37.88GHz', '37.9GHz', '37.92GHz', '37.94GHz', '37.96GHz', '37.98GHz', '38GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_3'
+			$begin 'Setup_4'
+				AnimationName='Animation5'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '37GHz', '37.02GHz', '37.04GHz', '37.06GHz', '37.08GHz', '37.1GHz', '37.12GHz', '37.14GHz', '37.16GHz', '37.18GHz', '37.2GHz', '37.22GHz', '37.24GHz', '37.26GHz', '37.28GHz', '37.3GHz', '37.32GHz', '37.34GHz', '37.36GHz', '37.38GHz', '37.4GHz', '37.42GHz', '37.44GHz', '37.46GHz', '37.48GHz', '37.5GHz', '37.52GHz', '37.54GHz', '37.56GHz', '37.58GHz', '37.6GHz', '37.62GHz', '37.64GHz', '37.66GHz', '37.68GHz', '37.7GHz', '37.72GHz', '37.74GHz', '37.76GHz', '37.78GHz', '37.8GHz', '37.82GHz', '37.84GHz', '37.86GHz', '37.88GHz', '37.9GHz', '37.92GHz', '37.94GHz', '37.96GHz', '37.98GHz', '38GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_4'
+			$begin 'Setup_5'
+				AnimationName='Animation6'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[25: '37.4GHz', '37.405GHz', '37.41GHz', '37.415GHz', '37.42GHz', '37.425GHz', '37.43GHz', '37.435GHz', '37.44GHz', '37.445GHz', '37.45GHz', '37.455GHz', '37.46GHz', '37.465GHz', '37.47GHz', '37.475GHz', '37.48GHz', '37.485GHz', '37.49GHz', '37.495GHz', '37.5GHz', '37.505GHz', '37.51GHz', '37.515GHz', '37.52GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_5'
 		$end 'AnimationSetups'
 		CacheHeaderFile='HDR9D3514015232167213.tmp'
 	$end 'HFSSModel'
@@ -5530,7 +5926,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=1
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						'3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -8, -31, 0, 1, 873, 307), OrientationMatrix(0.106676056981087, 0.00145818560849875, 0.00192715041339397, 0, -0.00145867827814072, 0.106691770255566, -8.57598843140295e-006, 0, -0.00192738662008196, -1.74683846125845e-005, 0.106683790683746, 0, 0.254367053508759, -0.538402080535889, -6.29600667953491, 1, 0, -0.975072503089905, 2.38178038597107, -1.32783401012421, 0.375222682952881, 0.169215679168701, 11.6342468261719), Drawings[10: 'Box4', 'Region', 'Rectangle1', 'Cylinder3', 'Rectangle2', 'Rectangle3', 'Rectangle1_1', 'Mag_E1', 'Mag_E2', 'Mag_E3'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						'3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -8, -30, 0, 1, 873, 307), OrientationMatrix(0.0973582789301872, -0.0436389334499836, 0.00154969538562, 0, 0.043634470552206, 0.0973698943853378, 0.00064715015469119, 0, -0.00167880731169134, 4.33344393968582e-005, 0.106688804924488, 0, 0.240041732788086, -0.462280839681625, -6.32570457458496, 1, 0, -0.163363352417946, 0.956178963184357, -0.871196091175079, -0.26065793633461, 0.200952529907227, 11.6658706665039), Drawings[10: 'Box4', 'Region', 'Rectangle1', 'Cylinder3', 'Rectangle2', 'Rectangle3', 'Rectangle1_1', 'Mag_E1', 'Mag_E3', 'Vector_E1'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -6793,6 +7189,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -6839,26 +7259,6 @@ $begin 'AnsoftProject'
 							ReportID=60
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(56)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(56, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 4.31638322589966e-039, 9.27548040025269e-039)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, 0, 702, -8, -31, 78, 78, 1525, 574))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'S Parameter'
@@ -7025,7 +7425,7 @@ lWS4LLKWBoRx+GwuK+p4GWGrV+f6vh1i8Xi5yqxxFPA5dVplFFFZH46FFFFAH//Z'
 		Notes=''
 		Factory='HFSS'
 		IsSolved=true
-		'Nominal Setups'[2: 'Setup1', 'Setup2']
+		'Nominal Setups'[4: 'Setup1', 'Setup2', 'Setup3', 'Setup4']
 		'Optimetrics Setups'[1: 'ParametricSetup1']
 		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
 BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
