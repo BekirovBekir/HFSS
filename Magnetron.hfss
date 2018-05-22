@@ -148,7 +148,7 @@ $begin 'AnsoftProject'
 			WorkingCS=1
 			$begin 'GeometryCore'
 				BlockVersionID=3
-				DataVersion=430
+				DataVersion=475
 				NativeKernel='ACIS'
 				NativeKernelVersionID=4
 				Units='mm'
@@ -4828,7 +4828,7 @@ $begin 'AnsoftProject'
 							SetupType='LinearStep'
 							StartValue='37GHz'
 							StopValue='38GHz'
-							StepSize='0.02GHz'
+							StepSize='0.005GHz'
 							Type='Discrete'
 							SaveFields=true
 							SaveRadFields=false
@@ -4962,11 +4962,11 @@ $begin 'AnsoftProject'
 					$begin 'Scale3DSettings'
 						unit=154
 						m_nLevels=15
-						minvalue=1
-						maxvalue=300000
+						minvalue=10000
+						maxvalue=500000
 						log=false
 						IntrinsicMin=0
-						IntrinsicMax=782056.6875
+						IntrinsicMax=458566
 						LimitFieldValuePrecision=false
 						FieldValuePrecisionDigits=4
 						ScaleType=1
@@ -4980,10 +4980,10 @@ $begin 'AnsoftProject'
 					$end 'Marker3DSettings'
 					$begin 'Arrow3DSettings'
 						ArrowType=1
-						ArrowMapSize=false
+						ArrowMapSize=true
 						ArrowMapColor=true
 						ShowArrowTail=true
-						ArrowSize=0.0478630103170872
+						ArrowSize=0.398107171058655
 					$end 'Arrow3DSettings'
 				$end 'QuantityFolder_1'
 				$begin 'QuantityFolder_2'
@@ -5026,14 +5026,14 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_1'
 					PlotName='Mag_E1'
 					PlotDefinitionId=49
-					VersionID=184
+					VersionID=250
 					SolutionId=6157
 					QuantityId=2
 					PlotFolder='E Field'
 					UserSpecifyName=0
 					UserSpecifyFolder=0
 					StreamlinePlot=false
-					IntrinsicVar='Freq=\'37.58GHz\' Phase=\'0deg\''
+					IntrinsicVar='Freq=\'37.77GHz\' Phase=\'0deg\''
 					FieldPlotGeometry(1, 128, 0, 1, 2680)
 					FilterIds(1, 2)
 					$begin 'PlotOnSurfaceSettings'
@@ -5056,7 +5056,7 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_2'
 					PlotName='Mag_H1'
 					PlotDefinitionId=50
-					VersionID=83
+					VersionID=96
 					SolutionId=2755
 					QuantityId=3
 					PlotFolder='H Field'
@@ -5086,7 +5086,7 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_3'
 					PlotName='Mag_E2'
 					PlotDefinitionId=53
-					VersionID=30
+					VersionID=35
 					SolutionId=2755
 					QuantityId=2
 					PlotFolder='E Field'
@@ -5116,14 +5116,14 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_4'
 					PlotName='Vector_E1'
 					PlotDefinitionId=56
-					VersionID=11
+					VersionID=41
 					SolutionId=6157
 					QuantityId=10
 					PlotFolder='E Field'
 					UserSpecifyName=0
 					UserSpecifyFolder=0
 					StreamlinePlot=false
-					IntrinsicVar='Freq=\'37.56GHz\' Phase=\'0deg\''
+					IntrinsicVar='Freq=\'36.72GHz\' Phase=\'0deg\''
 					FieldPlotGeometry(1, 128, 0, 1, 2680)
 					FilterIds(1, 2)
 					$begin 'PlotOnSurfaceSettings'
@@ -5146,14 +5146,14 @@ $begin 'AnsoftProject'
 				$begin 'PlotDefinition_5'
 					PlotName='Mag_E3'
 					PlotDefinitionId=59
-					VersionID=14
+					VersionID=61
 					SolutionId=6157
 					QuantityId=2
 					PlotFolder='E Field'
 					UserSpecifyName=0
 					UserSpecifyFolder=0
 					StreamlinePlot=false
-					IntrinsicVar='Freq=\'37.58GHz\' Phase=\'0deg\''
+					IntrinsicVar='Freq=\'36.68GHz\' Phase=\'0deg\''
 					FieldPlotGeometry(1, 128, 0, 1, -2)
 					FilterIds(1, 2)
 					$begin 'PlotOnSurfaceSettings'
@@ -5282,7 +5282,6 @@ $begin 'AnsoftProject'
 					ID=2593
 					Name='LastAdaptive'
 					$begin 'SimDataExtractor'
-						SimValue('Mag_E', 1, 154, false, SimValueID=6156, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -5343,12 +5342,9 @@ $begin 'AnsoftProject'
 					ID=2755
 					Name='Sweep1'
 					$begin 'SimDataExtractor'
-						SimValue('Zo(Port2)', 2, 90, false, SimValueID=6070, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=6071, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_H', 1, 107, false, SimValueID=6072, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=6073, 3, 0, 2, 0, false, false, 9958, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Vector_E', 1, 154, false, SimValueID=6074, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=6075, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Zo(Port2)', 2, 90, false, SimValueID=7206, 3, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_H', 1, 107, false, SimValueID=7208, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=7209, 3, 0, 2, 0, false, false, 9958, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -5511,16 +5507,6 @@ $begin 'AnsoftProject'
 								Increment=0.0872664625997165
 								CreateIndexedSubsweepFlag=false
 							$end 'PostprocessSweep'
-							$begin 'Sweep'
-								Variable='$len'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='$widht'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 						IsPortOnly=false
 					$end 'SimDataExtractor'
@@ -5541,7 +5527,6 @@ $begin 'AnsoftProject'
 					ID=6078
 					Name='LastAdaptive'
 					$begin 'SimDataExtractor'
-						SimValue('Mag_E', 1, 154, false, SimValueID=6155, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -5584,16 +5569,6 @@ $begin 'AnsoftProject'
 								Increment=0.0872664625997165
 								CreateIndexedSubsweepFlag=false
 							$end 'PostprocessSweep'
-							$begin 'Sweep'
-								Variable='$len'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='$widht'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 						IsPortOnly=false
 					$end 'SimDataExtractor'
@@ -5602,13 +5577,13 @@ $begin 'AnsoftProject'
 					ID=6157
 					Name='Sweep'
 					$begin 'SimDataExtractor'
-						SimValue('Mag_E', 1, 154, false, SimValueID=6216, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Mag_E', 1, 154, false, SimValueID=6217, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Vector_E', 1, 154, false, SimValueID=6293, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=7207, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Vector_E', 1, 154, false, SimValueID=7210, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
+						SimValue('Mag_E', 1, 154, false, SimValueID=7211, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
-								Column='37GHz;37.02GHz;37.04GHz;37.06GHz;37.08GHz;37.1GHz;37.12GHz;37.14GHz;37.16GHz;37.18GHz;37.2GHz;37.22GHz;37.24GHz;37.26GHz;37.28GHz;37.3GHz;37.32GHz;37.34GHz;37.36GHz;37.38GHz;37.4GHz;37.42GHz;37.44GHz;37.46GHz;37.48GHz;37.5GHz;37.52GHz;37.54GHz;37.56GHz;37.58GHz;37.6GHz;37.62GHz;37.64GHz;37.66GHz;37.68GHz;37.7GHz;37.72GHz;37.74GHz;37.76GHz;37.78GHz;37.8GHz;37.82GHz;37.84GHz;37.86GHz;37.88GHz;37.9GHz;37.92GHz;37.94GHz;37.96GHz;37.98GHz;38GHz'
+								Column='37GHz;37.005GHz;37.01GHz;37.015GHz;37.02GHz;37.025GHz;37.03GHz;37.035GHz;37.04GHz;37.045GHz;37.05GHz;37.055GHz;37.06GHz;37.065GHz;37.07GHz;37.075GHz;37.08GHz;37.085GHz;37.09GHz;37.095GHz;37.1GHz;37.105GHz;37.11GHz;37.115GHz;37.12GHz;37.125GHz;37.13GHz;37.135GHz;37.14GHz;37.145GHz;37.15GHz;37.155GHz;37.16GHz;37.165GHz;37.17GHz;37.175GHz;37.18GHz;37.185GHz;37.19GHz;37.195GHz;37.2GHz;37.205GHz;37.21GHz;37.215GHz;37.22GHz;37.225GHz;37.23GHz;37.235GHz;37.24GHz;37.245GHz;37.25GHz;37.255GHz;37.26GHz;37.265GHz;37.27GHz;37.275GHz;37.28GHz;37.285GHz;37.29GHz;37.295GHz;37.3GHz;37.305GHz;37.31GHz;37.315GHz;37.32GHz;37.325GHz;37.33GHz;37.335GHz;37.34GHz;37.345GHz;37.35GHz;37.355GHz;37.36GHz;37.365GHz;37.37GHz;37.375GHz;37.38GHz;37.385GHz;37.39GHz;37.395GHz;37.4GHz;37.405GHz;37.41GHz;37.415GHz;37.42GHz;37.425GHz;37.43GHz;37.435GHz;37.44GHz;37.445GHz;37.45GHz;37.455GHz;37.46GHz;37.465GHz;37.47GHz;37.475GHz;37.48GHz;37.485GHz;37.49GHz;37.495GHz;37.5GHz;37.505GHz;37.51GHz;37.515GHz;37.52GHz;37.525GHz;37.53GHz;37.535GHz;37.54GHz;37.545GHz;37.55GHz;37.555GHz;37.56GHz;37.565GHz;37.57GHz;37.575GHz;37.58GHz;37.585GHz;37.59GHz;37.595GHz;37.6GHz;37.605GHz;37.61GHz;37.615GHz;37.62GHz;37.625GHz;37.63GHz;37.635GHz;37.64GHz;37.645GHz;37.65GHz;37.655GHz;37.66GHz;37.665GHz;37.67GHz;37.675GHz;37.68GHz;37.685GHz;37.69GHz;37.695GHz;37.7GHz;37.705GHz;37.71GHz;37.715GHz;37.72GHz;37.725GHz;37.73GHz;37.735GHz;37.74GHz;37.745GHz;37.75GHz;37.755GHz;37.76GHz;37.765GHz;37.77GHz;37.775GHz;37.78GHz;37.785GHz;37.79GHz;37.795GHz;37.8GHz;37.805GHz;37.81GHz;37.815GHz;37.82GHz;37.825GHz;37.83GHz;37.835GHz;37.84GHz;37.845GHz;37.85GHz;37.855GHz;37.86GHz;37.865GHz;37.87GHz;37.875GHz;37.88GHz;37.885GHz;37.89GHz;37.895GHz;37.9GHz;37.905GHz;37.91GHz;37.915GHz;37.92GHz;37.925GHz;37.93GHz;37.935GHz;37.94GHz;37.945GHz;37.95GHz;37.955GHz;37.96GHz;37.965GHz;37.97GHz;37.975GHz;37.98GHz;37.985GHz;37.99GHz;37.995GHz;38GHz'
 								Units='GHz'
 							$end 'Sweep'
 							$begin 'PostprocessSweep'
@@ -5677,7 +5652,6 @@ $begin 'AnsoftProject'
 					ID=6220
 					Name='LastAdaptive'
 					$begin 'SimDataExtractor'
-						SimValue('Mag_E', 1, 154, false, SimValueID=6266, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -5720,16 +5694,6 @@ $begin 'AnsoftProject'
 								Increment=0.0872664625997165
 								CreateIndexedSubsweepFlag=false
 							$end 'PostprocessSweep'
-							$begin 'Sweep'
-								Variable='$len'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='$widht'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 						IsPortOnly=false
 					$end 'SimDataExtractor'
@@ -5738,7 +5702,6 @@ $begin 'AnsoftProject'
 					ID=6223
 					Name='Sweep'
 					$begin 'SimDataExtractor'
-						SimValue('Mag_E', 1, 154, false, SimValueID=6292, 3, 0, 2, 0, false, false, 2680, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'Sweep'
 								Variable='Freq'
@@ -5781,16 +5744,6 @@ $begin 'AnsoftProject'
 								Increment=0.0872664625997165
 								CreateIndexedSubsweepFlag=false
 							$end 'PostprocessSweep'
-							$begin 'Sweep'
-								Variable='$len'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='$widht'
-								Column='0mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 						IsPortOnly=false
 					$end 'SimDataExtractor'
@@ -5872,15 +5825,6 @@ $begin 'AnsoftProject'
 				IntrinsicVarVals=''
 			$end 'Setup_0'
 			$begin 'Setup_1'
-				AnimationName='Animation3'
-				Description='Swept variable Phase'
-				SweptVariable='Phase'
-				SweptValues[18: '0deg', '10deg', '20deg', '30deg', '40deg', '50deg', '60deg', '70deg', '80deg', '90deg', '100deg', '110deg', '120deg', '130deg', '140deg', '150deg', '160deg', '170deg']
-				UseDesignInstance=true
-				DesignPoint=''
-				IntrinsicVarVals=''
-			$end 'Setup_1'
-			$begin 'Setup_2'
 				AnimationName='Animation2'
 				Description='Swept variable Freq'
 				SweptVariable='Freq'
@@ -5888,26 +5832,8 @@ $begin 'AnsoftProject'
 				UseDesignInstance=true
 				DesignPoint=''
 				IntrinsicVarVals=''
-			$end 'Setup_2'
-			$begin 'Setup_3'
-				AnimationName='Animation4'
-				Description='Swept variable Freq'
-				SweptVariable='Freq'
-				SweptValues[51: '37GHz', '37.02GHz', '37.04GHz', '37.06GHz', '37.08GHz', '37.1GHz', '37.12GHz', '37.14GHz', '37.16GHz', '37.18GHz', '37.2GHz', '37.22GHz', '37.24GHz', '37.26GHz', '37.28GHz', '37.3GHz', '37.32GHz', '37.34GHz', '37.36GHz', '37.38GHz', '37.4GHz', '37.42GHz', '37.44GHz', '37.46GHz', '37.48GHz', '37.5GHz', '37.52GHz', '37.54GHz', '37.56GHz', '37.58GHz', '37.6GHz', '37.62GHz', '37.64GHz', '37.66GHz', '37.68GHz', '37.7GHz', '37.72GHz', '37.74GHz', '37.76GHz', '37.78GHz', '37.8GHz', '37.82GHz', '37.84GHz', '37.86GHz', '37.88GHz', '37.9GHz', '37.92GHz', '37.94GHz', '37.96GHz', '37.98GHz', '38GHz']
-				UseDesignInstance=true
-				DesignPoint=''
-				IntrinsicVarVals=''
-			$end 'Setup_3'
-			$begin 'Setup_4'
-				AnimationName='Animation5'
-				Description='Swept variable Freq'
-				SweptVariable='Freq'
-				SweptValues[51: '37GHz', '37.02GHz', '37.04GHz', '37.06GHz', '37.08GHz', '37.1GHz', '37.12GHz', '37.14GHz', '37.16GHz', '37.18GHz', '37.2GHz', '37.22GHz', '37.24GHz', '37.26GHz', '37.28GHz', '37.3GHz', '37.32GHz', '37.34GHz', '37.36GHz', '37.38GHz', '37.4GHz', '37.42GHz', '37.44GHz', '37.46GHz', '37.48GHz', '37.5GHz', '37.52GHz', '37.54GHz', '37.56GHz', '37.58GHz', '37.6GHz', '37.62GHz', '37.64GHz', '37.66GHz', '37.68GHz', '37.7GHz', '37.72GHz', '37.74GHz', '37.76GHz', '37.78GHz', '37.8GHz', '37.82GHz', '37.84GHz', '37.86GHz', '37.88GHz', '37.9GHz', '37.92GHz', '37.94GHz', '37.96GHz', '37.98GHz', '38GHz']
-				UseDesignInstance=true
-				DesignPoint=''
-				IntrinsicVarVals=''
-			$end 'Setup_4'
-			$begin 'Setup_5'
+			$end 'Setup_1'
+			$begin 'Setup_2'
 				AnimationName='Animation6'
 				Description='Swept variable Freq'
 				SweptVariable='Freq'
@@ -5915,7 +5841,88 @@ $begin 'AnsoftProject'
 				UseDesignInstance=true
 				DesignPoint=''
 				IntrinsicVarVals=''
+			$end 'Setup_2'
+			$begin 'Setup_3'
+				AnimationName='Animation3'
+				Description='Swept variable Phase'
+				SweptVariable='Phase'
+				SweptValues[35: '0deg', '5deg', '10deg', '15deg', '20deg', '25deg', '30deg', '35deg', '40deg', '45deg', '50deg', '55deg', '60deg', '65deg', '70deg', '75deg', '80deg', '85deg', '90deg', '95deg', '100deg', '105deg', '110deg', '115deg', '120deg', '125deg', '130deg', '135deg', '140deg', '145deg', '150deg', '155deg', '160deg', '165deg', '170deg']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_3'
+			$begin 'Setup_4'
+				AnimationName='Animation4'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '33GHz', '33.02GHz', '33.04GHz', '33.06GHz', '33.08GHz', '33.1GHz', '33.12GHz', '33.14GHz', '33.16GHz', '33.18GHz', '33.2GHz', '33.22GHz', '33.24GHz', '33.26GHz', '33.28GHz', '33.3GHz', '33.32GHz', '33.34GHz', '33.36GHz', '33.38GHz', '33.4GHz', '33.42GHz', '33.44GHz', '33.46GHz', '33.48GHz', '33.5GHz', '33.52GHz', '33.54GHz', '33.56GHz', '33.58GHz', '33.6GHz', '33.62GHz', '33.64GHz', '33.66GHz', '33.68GHz', '33.7GHz', '33.72GHz', '33.74GHz', '33.76GHz', '33.78GHz', '33.8GHz', '33.82GHz', '33.84GHz', '33.86GHz', '33.88GHz', '33.9GHz', '33.92GHz', '33.94GHz', '33.96GHz', '33.98GHz', '34GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_4'
+			$begin 'Setup_5'
+				AnimationName='Animation5'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '34GHz', '34.02GHz', '34.04GHz', '34.06GHz', '34.08GHz', '34.1GHz', '34.12GHz', '34.14GHz', '34.16GHz', '34.18GHz', '34.2GHz', '34.22GHz', '34.24GHz', '34.26GHz', '34.28GHz', '34.3GHz', '34.32GHz', '34.34GHz', '34.36GHz', '34.38GHz', '34.4GHz', '34.42GHz', '34.44GHz', '34.46GHz', '34.48GHz', '34.5GHz', '34.52GHz', '34.54GHz', '34.56GHz', '34.58GHz', '34.6GHz', '34.62GHz', '34.64GHz', '34.66GHz', '34.68GHz', '34.7GHz', '34.72GHz', '34.74GHz', '34.76GHz', '34.78GHz', '34.8GHz', '34.82GHz', '34.84GHz', '34.86GHz', '34.88GHz', '34.9GHz', '34.92GHz', '34.94GHz', '34.96GHz', '34.98GHz', '35GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
 			$end 'Setup_5'
+			$begin 'Setup_6'
+				AnimationName='Animation7'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '35GHz', '35.02GHz', '35.04GHz', '35.06GHz', '35.08GHz', '35.1GHz', '35.12GHz', '35.14GHz', '35.16GHz', '35.18GHz', '35.2GHz', '35.22GHz', '35.24GHz', '35.26GHz', '35.28GHz', '35.3GHz', '35.32GHz', '35.34GHz', '35.36GHz', '35.38GHz', '35.4GHz', '35.42GHz', '35.44GHz', '35.46GHz', '35.48GHz', '35.5GHz', '35.52GHz', '35.54GHz', '35.56GHz', '35.58GHz', '35.6GHz', '35.62GHz', '35.64GHz', '35.66GHz', '35.68GHz', '35.7GHz', '35.72GHz', '35.74GHz', '35.76GHz', '35.78GHz', '35.8GHz', '35.82GHz', '35.84GHz', '35.86GHz', '35.88GHz', '35.9GHz', '35.92GHz', '35.94GHz', '35.96GHz', '35.98GHz', '36GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_6'
+			$begin 'Setup_7'
+				AnimationName='Animation8'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '32GHz', '32.02GHz', '32.04GHz', '32.06GHz', '32.08GHz', '32.1GHz', '32.12GHz', '32.14GHz', '32.16GHz', '32.18GHz', '32.2GHz', '32.22GHz', '32.24GHz', '32.26GHz', '32.28GHz', '32.3GHz', '32.32GHz', '32.34GHz', '32.36GHz', '32.38GHz', '32.4GHz', '32.42GHz', '32.44GHz', '32.46GHz', '32.48GHz', '32.5GHz', '32.52GHz', '32.54GHz', '32.56GHz', '32.58GHz', '32.6GHz', '32.62GHz', '32.64GHz', '32.66GHz', '32.68GHz', '32.7GHz', '32.72GHz', '32.74GHz', '32.76GHz', '32.78GHz', '32.8GHz', '32.82GHz', '32.84GHz', '32.86GHz', '32.88GHz', '32.9GHz', '32.92GHz', '32.94GHz', '32.96GHz', '32.98GHz', '33GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_7'
+			$begin 'Setup_8'
+				AnimationName='Animation9'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '36GHz', '36.02GHz', '36.04GHz', '36.06GHz', '36.08GHz', '36.1GHz', '36.12GHz', '36.14GHz', '36.16GHz', '36.18GHz', '36.2GHz', '36.22GHz', '36.24GHz', '36.26GHz', '36.28GHz', '36.3GHz', '36.32GHz', '36.34GHz', '36.36GHz', '36.38GHz', '36.4GHz', '36.42GHz', '36.44GHz', '36.46GHz', '36.48GHz', '36.5GHz', '36.52GHz', '36.54GHz', '36.56GHz', '36.58GHz', '36.6GHz', '36.62GHz', '36.64GHz', '36.66GHz', '36.68GHz', '36.7GHz', '36.72GHz', '36.74GHz', '36.76GHz', '36.78GHz', '36.8GHz', '36.82GHz', '36.84GHz', '36.86GHz', '36.88GHz', '36.9GHz', '36.92GHz', '36.94GHz', '36.96GHz', '36.98GHz', '37GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_8'
+			$begin 'Setup_9'
+				AnimationName='Animation10'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[51: '31GHz', '31.02GHz', '31.04GHz', '31.06GHz', '31.08GHz', '31.1GHz', '31.12GHz', '31.14GHz', '31.16GHz', '31.18GHz', '31.2GHz', '31.22GHz', '31.24GHz', '31.26GHz', '31.28GHz', '31.3GHz', '31.32GHz', '31.34GHz', '31.36GHz', '31.38GHz', '31.4GHz', '31.42GHz', '31.44GHz', '31.46GHz', '31.48GHz', '31.5GHz', '31.52GHz', '31.54GHz', '31.56GHz', '31.58GHz', '31.6GHz', '31.62GHz', '31.64GHz', '31.66GHz', '31.68GHz', '31.7GHz', '31.72GHz', '31.74GHz', '31.76GHz', '31.78GHz', '31.8GHz', '31.82GHz', '31.84GHz', '31.86GHz', '31.88GHz', '31.9GHz', '31.92GHz', '31.94GHz', '31.96GHz', '31.98GHz', '32GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_9'
+			$begin 'Setup_10'
+				AnimationName='Animation11'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[101: '34GHz', '34.01GHz', '34.02GHz', '34.03GHz', '34.04GHz', '34.05GHz', '34.06GHz', '34.07GHz', '34.08GHz', '34.09GHz', '34.1GHz', '34.11GHz', '34.12GHz', '34.13GHz', '34.14GHz', '34.15GHz', '34.16GHz', '34.17GHz', '34.18GHz', '34.19GHz', '34.2GHz', '34.21GHz', '34.22GHz', '34.23GHz', '34.24GHz', '34.25GHz', '34.26GHz', '34.27GHz', '34.28GHz', '34.29GHz', '34.3GHz', '34.31GHz', '34.32GHz', '34.33GHz', '34.34GHz', '34.35GHz', '34.36GHz', '34.37GHz', '34.38GHz', '34.39GHz', '34.4GHz', '34.41GHz', '34.42GHz', '34.43GHz', '34.44GHz', '34.45GHz', '34.46GHz', '34.47GHz', '34.48GHz', '34.49GHz', '34.5GHz', '34.51GHz', '34.52GHz', '34.53GHz', '34.54GHz', '34.55GHz', '34.56GHz', '34.57GHz', '34.58GHz', '34.59GHz', '34.6GHz', '34.61GHz', '34.62GHz', '34.63GHz', '34.64GHz', '34.65GHz', '34.66GHz', '34.67GHz', '34.68GHz', '34.69GHz', '34.7GHz', '34.71GHz', '34.72GHz', '34.73GHz', '34.74GHz', '34.75GHz', '34.76GHz', '34.77GHz', '34.78GHz', '34.79GHz', '34.8GHz', '34.81GHz', '34.82GHz', '34.83GHz', '34.84GHz', '34.85GHz', '34.86GHz', '34.87GHz', '34.88GHz', '34.89GHz', '34.9GHz', '34.91GHz', '34.92GHz', '34.93GHz', '34.94GHz', '34.95GHz', '34.96GHz', '34.97GHz', '34.98GHz', '34.99GHz', '35GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_10'
+			$begin 'Setup_11'
+				AnimationName='Animation12'
+				Description='Swept variable Freq'
+				SweptVariable='Freq'
+				SweptValues[201: '37GHz', '37.005GHz', '37.01GHz', '37.015GHz', '37.02GHz', '37.025GHz', '37.03GHz', '37.035GHz', '37.04GHz', '37.045GHz', '37.05GHz', '37.055GHz', '37.06GHz', '37.065GHz', '37.07GHz', '37.075GHz', '37.08GHz', '37.085GHz', '37.09GHz', '37.095GHz', '37.1GHz', '37.105GHz', '37.11GHz', '37.115GHz', '37.12GHz', '37.125GHz', '37.13GHz', '37.135GHz', '37.14GHz', '37.145GHz', '37.15GHz', '37.155GHz', '37.16GHz', '37.165GHz', '37.17GHz', '37.175GHz', '37.18GHz', '37.185GHz', '37.19GHz', '37.195GHz', '37.2GHz', '37.205GHz', '37.21GHz', '37.215GHz', '37.22GHz', '37.225GHz', '37.23GHz', '37.235GHz', '37.24GHz', '37.245GHz', '37.25GHz', '37.255GHz', '37.26GHz', '37.265GHz', '37.27GHz', '37.275GHz', '37.28GHz', '37.285GHz', '37.29GHz', '37.295GHz', '37.3GHz', '37.305GHz', '37.31GHz', '37.315GHz', '37.32GHz', '37.325GHz', '37.33GHz', '37.335GHz', '37.34GHz', '37.345GHz', '37.35GHz', '37.355GHz', '37.36GHz', '37.365GHz', '37.37GHz', '37.375GHz', '37.38GHz', '37.385GHz', '37.39GHz', '37.395GHz', '37.4GHz', '37.405GHz', '37.41GHz', '37.415GHz', '37.42GHz', '37.425GHz', '37.43GHz', '37.435GHz', '37.44GHz', '37.445GHz', '37.45GHz', '37.455GHz', '37.46GHz', '37.465GHz', '37.47GHz', '37.475GHz', '37.48GHz', '37.485GHz', '37.49GHz', '37.495GHz', '37.5GHz', '37.505GHz', '37.51GHz', '37.515GHz', '37.52GHz', '37.525GHz', '37.53GHz', '37.535GHz', '37.54GHz', '37.545GHz', '37.55GHz', '37.555GHz', '37.56GHz', '37.565GHz', '37.57GHz', '37.575GHz', '37.58GHz', '37.585GHz', '37.59GHz', '37.595GHz', '37.6GHz', '37.605GHz', '37.61GHz', '37.615GHz', '37.62GHz', '37.625GHz', '37.63GHz', '37.635GHz', '37.64GHz', '37.645GHz', '37.65GHz', '37.655GHz', '37.66GHz', '37.665GHz', '37.67GHz', '37.675GHz', '37.68GHz', '37.685GHz', '37.69GHz', '37.695GHz', '37.7GHz', '37.705GHz', '37.71GHz', '37.715GHz', '37.72GHz', '37.725GHz', '37.73GHz', '37.735GHz', '37.74GHz', '37.745GHz', '37.75GHz', '37.755GHz', '37.76GHz', '37.765GHz', '37.77GHz', '37.775GHz', '37.78GHz', '37.785GHz', '37.79GHz', '37.795GHz', '37.8GHz', '37.805GHz', '37.81GHz', '37.815GHz', '37.82GHz', '37.825GHz', '37.83GHz', '37.835GHz', '37.84GHz', '37.845GHz', '37.85GHz', '37.855GHz', '37.86GHz', '37.865GHz', '37.87GHz', '37.875GHz', '37.88GHz', '37.885GHz', '37.89GHz', '37.895GHz', '37.9GHz', '37.905GHz', '37.91GHz', '37.915GHz', '37.92GHz', '37.925GHz', '37.93GHz', '37.935GHz', '37.94GHz', '37.945GHz', '37.95GHz', '37.955GHz', '37.96GHz', '37.965GHz', '37.97GHz', '37.975GHz', '37.98GHz', '37.985GHz', '37.99GHz', '37.995GHz', '38GHz']
+				UseDesignInstance=true
+				DesignPoint=''
+				IntrinsicVarVals=''
+			$end 'Setup_11'
 		$end 'AnimationSetups'
 		CacheHeaderFile='HDR9D3514015232167213.tmp'
 	$end 'HFSSModel'
@@ -5926,7 +5933,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=1
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						'3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -8, -30, 0, 1, 873, 307), OrientationMatrix(0.0973582789301872, -0.0436389334499836, 0.00154969538562, 0, 0.043634470552206, 0.0973698943853378, 0.00064715015469119, 0, -0.00167880731169134, 4.33344393968582e-005, 0.106688804924488, 0, 0.240041732788086, -0.462280839681625, -6.32570457458496, 1, 0, -0.163363352417946, 0.956178963184357, -0.871196091175079, -0.26065793633461, 0.200952529907227, 11.6658706665039), Drawings[10: 'Box4', 'Region', 'Rectangle1', 'Cylinder3', 'Rectangle2', 'Rectangle3', 'Rectangle1_1', 'Mag_E1', 'Mag_E3', 'Vector_E1'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						'3D Modeler'(Editor3d(View(WindowPos(3, -1, -1, -8, -30, 0, 1, 873, 307), OrientationMatrix(0.106695681810379, 0.000439892610302195, -0.00101009604986757, 0, -0.000442648015450686, 0.106700152158737, -0.000231995742069557, 0, 0.00100893899798393, 0.000236492487601936, 0.106696352362633, 0, 0.160063043236732, -0.832042574882507, -6.14948606491089, 1, 0, -0.520621120929718, 1.29090023040771, -1.34173107147217, -0.370058298110962, 0.0383262634277344, 11.5031394958496), Drawings[4: 'Box4', 'Cylinder3', 'Vector_E1', 'Mag_E1'], 'View Data'('Render Mode'=1, 'Show Ruler'=1), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
